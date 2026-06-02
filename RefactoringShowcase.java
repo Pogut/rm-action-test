@@ -1,15 +1,15 @@
 public class RefactoringShowcase {
-    private final double taxRate = 0.08;
+    private final StatementFormatter formatter = new StatementFormatter();
 
     public String createStatement(String customerName, int unitPrice, int quantity, int discount) {
+        int total = calculateTotal(unitPrice, quantity, discount);
         int subtotal = unitPrice * quantity;
         int discountedSubtotal = subtotal - discount;
-        int tax = (int) (discountedSubtotal * taxRate);
-        int total = discountedSubtotal + tax;
+        int tax = (int) (discountedSubtotal * new TaxRules().taxRate);
 
-        String header = buildHeader(customerName);
-        double dollars = centsToDollars(total);
-        String status = formatPaymentStatus(total);
+        String header = formatter.buildHeader(customerName);
+        double dollars = total / 100.0;
+        String status = describePaymentStatus(total);
 
         return header + "\n"
                 + "Subtotal: " + subtotal + "\n"
@@ -19,15 +19,14 @@ public class RefactoringShowcase {
                 + status;
     }
 
-    private String buildHeader(String customerName) {
-        return "Statement for " + customerName.trim().toUpperCase();
+    private int calculateTotal(int unitPrice, int quantity, int discount) {
+        int subtotal = unitPrice * quantity;
+        int discountedSubtotal = subtotal - discount;
+        int tax = (int) (discountedSubtotal * new TaxRules().taxRate);
+        return discountedSubtotal + tax;
     }
 
-    private double centsToDollars(int cents) {
-        return cents / 100.0;
-    }
-
-    private String formatPaymentStatus(int total) {
+    private String describePaymentStatus(int total) {
         if (total > 0) {
             return "Payment required";
         }
@@ -36,7 +35,11 @@ public class RefactoringShowcase {
 }
 
 class StatementFormatter {
+    public String buildHeader(String customerName) {
+        return "Statement for " + customerName.trim().toUpperCase();
+    }
 }
 
 class TaxRules {
+    public final double taxRate = 0.08;
 }
