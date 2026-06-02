@@ -40,8 +40,7 @@ class StatementFormatter {
     }
 }
 
-// testing
-
+// testing again
 class TaxRules {
     public final double taxRate = 0.08;
 }
