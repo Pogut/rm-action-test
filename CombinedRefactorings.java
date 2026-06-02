@@ -1,15 +1,15 @@
 public class CombinedRefactorings {
-    private final double taxRate = 0.08;
+    private final InvoiceFormatter formatter = new InvoiceFormatter();
 
     public String createInvoice(String customerName, int itemPrice, int quantity, int discountCents) {
+        int total = calculateTotal(itemPrice, quantity, discountCents);
         int subtotal = itemPrice * quantity;
         int discountedSubtotal = subtotal - discountCents;
-        int tax = (int) (discountedSubtotal * taxRate);
-        int total = discountedSubtotal + tax;
+        int tax = (int) (discountedSubtotal * new BillingPolicy().taxRate);
 
-        String title = buildTitle(customerName);
-        double dollars = centsToDollars(total);
-        String status = formatStatus(total);
+        String title = formatter.formatTitle(customerName);
+        double dollars = total / 100.0;
+        String status = paymentStatus(total);
 
         return title + "\n"
                 + "Subtotal: " + subtotal + "\n"
@@ -19,25 +19,28 @@ public class CombinedRefactorings {
                 + status;
     }
 
-    private String buildTitle(String customerName) {
-        return "Invoice for " + customerName.trim().toUpperCase();
+    private int calculateTotal(int itemPrice, int quantity, int discountCents) {
+        int subtotal = itemPrice * quantity;
+        int discountedSubtotal = subtotal - discountCents;
+        int tax = (int) (discountedSubtotal * new BillingPolicy().taxRate);
+        return discountedSubtotal + tax;
     }
 
-    private double centsToDollars(int cents) {
-        return cents / 100.0;
-    }
-
-    private String formatStatus(int total) {
-        if (total > 0) {
-            return "Payment required";
-        } else {
+    private String paymentStatus(int total) {
+        if (total <= 0) {
             return "No payment required";
+        } else {
+            return "Payment required";
         }
     }
 }
 
 class InvoiceFormatter {
+    public String formatTitle(String customerName) {
+        return "Invoice for " + customerName.trim().toUpperCase();
+    }
 }
 
 class BillingPolicy {
+    public final double taxRate = 0.08;
 }
