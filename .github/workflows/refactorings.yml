@@ -13,6 +13,6 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: Pogut/refactoringminer-action@diff-interface
+      - uses: Pogut/refactoringminer-action@main
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
