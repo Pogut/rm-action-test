@@ -15,4 +15,6 @@ jobs:
           fetch-depth: 0
       - uses: Pogut/refactoringminer-action@diff-interface
         with:
+
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          image: ghcr.io/pogut/refactoringminer:dev
