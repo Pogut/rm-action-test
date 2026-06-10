@@ -18,3 +18,5 @@ jobs:
 
           github-token: ${{ secrets.GITHUB_TOKEN }}
           image: ghcr.io/pogut/refactoringminer:dev
+
+  
