@@ -1,0 +1,202 @@
+/*
+ * Dark-mode overrides for the RefactoringMiner web UI.
+ *
+ * Bootstrap 5.1.3 has no native dark theme, so these rules are keyed on the
+ * data-theme="dark" attribute that theme.js sets on <html>. They override the
+ * Bootstrap defaults plus the project's own light styles (style.css,
+ * vanilla.css, monaco.css). The diff-highlight colours are re-tuned as
+ * translucent overlays so they read well on a dark editor background while the
+ * Monaco "vs-dark" syntax tokens stay legible on top.
+ */
+
+html[data-theme="dark"] {
+    color-scheme: dark;
+}
+
+html[data-theme="dark"] body {
+    background-color: #1e1e1e;
+    color: #e6e6e6;
+}
+
+html[data-theme="dark"] a {
+    color: #6cb6ff;
+}
+
+html[data-theme="dark"] a:hover {
+    color: #9ecbff;
+}
+
+/* Cards */
+html[data-theme="dark"] .card {
+    background-color: #252526;
+    border-color: #3c3c3c;
+}
+
+html[data-theme="dark"] .card-header,
+html[data-theme="dark"] .card-header.bg-light {
+    background-color: #2d2d30 !important;
+    border-color: #3c3c3c;
+    color: #e6e6e6;
+}
+
+html[data-theme="dark"] .card-body {
+    color: #e6e6e6;
+}
+
+/* Generic light backgrounds (e.g. the single-page-view sidebar) */
+html[data-theme="dark"] .bg-light {
+    background-color: #252526 !important;
+    color: #e6e6e6;
+}
+
+/* Tables */
+html[data-theme="dark"] .table {
+    color: #e6e6e6;
+    border-color: #3c3c3c;
+}
+
+html[data-theme="dark"] .table-striped > tbody > tr:nth-of-type(odd) > * {
+    background-color: rgba(255, 255, 255, 0.03);
+    color: #e6e6e6;
+}
+
+html[data-theme="dark"] .table > :not(caption) > * > * {
+    border-bottom-color: #3c3c3c;
+}
+
+/* Badges that force dark text on a light badge */
+html[data-theme="dark"] .badge.text-dark {
+    color: #1e1e1e !important;
+}
+
+/* List groups */
+html[data-theme="dark"] .list-group-item {
+    background-color: #252526;
+    border-color: #3c3c3c;
+    color: #e6e6e6;
+}
+
+/* Alerts (merge-parent bar) */
+html[data-theme="dark"] .alert-secondary {
+    background-color: #2d2d30;
+    border-color: #3c3c3c;
+    color: #e6e6e6;
+}
+
+/* Buttons: keep the coloured variants, soften the neutral ones */
+html[data-theme="dark"] .btn-default,
+html[data-theme="dark"] .btn-secondary {
+    background-color: #3a3d41;
+    border-color: #4a4d51;
+    color: #e6e6e6;
+}
+
+html[data-theme="dark"] .btn-outline-primary {
+    color: #6cb6ff;
+    border-color: #3d6ea5;
+}
+
+/* Inline code in refactoring descriptions */
+html[data-theme="dark"] code {
+    color: #e0a0ff;
+}
+
+/* Form controls */
+html[data-theme="dark"] .form-check-label {
+    color: #e6e6e6;
+}
+
+/* Tree connector lines (style.css uses #ddd) */
+html[data-theme="dark"] ul li {
+    border-left-color: #3c3c3c;
+}
+
+/* Vanilla (classic) diff scroll panels */
+html[data-theme="dark"] .pre-scrollable {
+    background-color: #1e1e1e !important;
+    color: #e6e6e6 !important;
+    border-color: #3c3c3c !important;
+}
+
+/* Popovers (Legend / Shortcuts) */
+html[data-theme="dark"] .popover {
+    background-color: #2d2d30;
+    border-color: #3c3c3c;
+}
+
+html[data-theme="dark"] .popover .popover-body {
+    color: #e6e6e6;
+}
+
+html[data-theme="dark"] .popover .popover-header {
+    background-color: #252526;
+    color: #e6e6e6;
+    border-bottom-color: #3c3c3c;
+}
+
+/* Monaco fold-region background */
+html[data-theme="dark"] .monaco-editor,
+html[data-theme="dark"] .monaco-diff-editor,
+html[data-theme="dark"] .monaco-component {
+    --vscode-editor-foldBackground: #1c3a4a !important;
+}
+
+/*
+ * Diff-highlight classes, re-tuned for dark backgrounds. These cover both the
+ * Monaco viewer (.inserted/.deleted/.updated/.moved/.mm/.moveIn/.moveOut) and
+ * the classic viewer (.add/.del/.upd/.mv), as well as the Legend swatches.
+ */
+html[data-theme="dark"] .inserted,
+html[data-theme="dark"] .add {
+    background-color: rgba(63, 185, 80, 0.22) !important;
+}
+
+html[data-theme="dark"] .deleted,
+html[data-theme="dark"] .del {
+    background-color: rgba(248, 81, 73, 0.22) !important;
+}
+
+html[data-theme="dark"] .updated,
+html[data-theme="dark"] .upd,
+html[data-theme="dark"] .mm.updOnTop {
+    background-color: rgba(56, 139, 253, 0.28) !important;
+}
+
+html[data-theme="dark"] .moved,
+html[data-theme="dark"] .mv,
+html[data-theme="dark"] .mm {
+    background-color: rgba(187, 128, 9, 0.22) !important;
+}
+
+html[data-theme="dark"] .moveIn {
+    background-color: rgba(46, 160, 67, 0.45) !important;
+}
+
+html[data-theme="dark"] .moveOut {
+    background-color: rgba(219, 109, 40, 0.45) !important;
+}
+
+html[data-theme="dark"] .selected,
+html[data-theme="dark"] .mm.updOnTop.selected {
+    background-color: rgba(210, 153, 34, 0.55) !important;
+}
+
+html[data-theme="dark"] .cupd {
+    color: #b9b9b9;
+}
+
+/* Inline PR review comments */
+html[data-theme="dark"] .inline-comment {
+    background: #2d2d30;
+    color: #e6e6e6;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+html[data-theme="dark"] .inline-comment strong {
+    color: #ffffff;
+}
+
+/* Toolbar toggle button */
+#theme-toggle {
+    white-space: nowrap;
+}
