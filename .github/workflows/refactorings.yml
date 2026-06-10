@@ -13,9 +13,10 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: Pogut/refactoringminer-action@diff-interface
+      - uses: Pogut/refactoringminer-action@main
         with:
-          github-token: ${{ secrets.GITHUB_TOKEN }}
-          image: ghcr.io/pogut/refactoringminer:dev
 
-  
+          github-token: ${{ secrets.GITHUB_TOKEN }}
+          # image: ghcr.io/pogut/refactoringminer:dev
+          image: tsantalis/refactoringminer:latest
+
