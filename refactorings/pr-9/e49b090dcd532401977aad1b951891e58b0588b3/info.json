@@ -1,0 +1,43 @@
+{
+  "diffInfos" : [ {
+    "srcPath" : "AdminAccount.java",
+    "dstPath" : "AdminAccount.java",
+    "id" : 0
+  }, {
+    "srcPath" : "CustomerProfile.java",
+    "dstPath" : "CustomerProfile.java",
+    "id" : 1
+  }, {
+    "srcPath" : "GuestAccount.java",
+    "dstPath" : "GuestAccount.java",
+    "id" : 2
+  }, {
+    "srcPath" : "OrderProcessor.java",
+    "dstPath" : "OrderProcessor.java",
+    "id" : 3
+  }, {
+    "srcPath" : "PricingPolicy.java",
+    "dstPath" : "PricingPolicy.java",
+    "id" : 4
+  }, {
+    "srcPath" : "ReceiptFormatter.java",
+    "dstPath" : "ReceiptFormatter.java",
+    "id" : 5
+  }, {
+    "srcPath" : "AdminAccount.java",
+    "dstPath" : "Account.java",
+    "id" : 6
+  }, {
+    "srcPath" : "CustomerProfile.java",
+    "dstPath" : "Address.java",
+    "id" : 7
+  }, {
+    "srcPath" : "GuestAccount.java",
+    "dstPath" : "Account.java",
+    "id" : 8
+  }, {
+    "srcPath" : "OrderProcessor.java",
+    "dstPath" : "ReceiptFormatter.java",
+    "id" : 9
+  } ]
+}
