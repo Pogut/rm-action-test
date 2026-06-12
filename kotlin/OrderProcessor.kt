@@ -1,15 +1,15 @@
 class OrderProcessor {
-    private val taxRate = 0.08
+    private val formatter = ReceiptFormatter()
 
-    fun buildReceipt(customerName: String, unitPrice: Int, quantity: Int, discount: Int): String {
+    fun buildReceipt(buyerName: String, unitPrice: Int, quantity: Int, discount: Int): String {
+        val total = calculateTotal(unitPrice, quantity, discount)
         val subtotal = unitPrice * quantity
         val discountedSubtotal = subtotal - discount
-        val tax = (discountedSubtotal * taxRate).toInt()
-        val total = discountedSubtotal + tax
+        val tax = (discountedSubtotal * PricingPolicy().taxRate).toInt()
 
-        val header = formatHeader(customerName)
-        val dollars = centsToDollars(total)
-        val status = formatPaymentStatus(total, discount)
+        val header = formatter.createReceiptHeader(buyerName)
+        val dollars = total / 100.0
+        val status = describePaymentStatus(total, discount)
 
         return header + "\n" +
                 "Subtotal: " + subtotal + "\n" +
@@ -19,15 +19,14 @@ class OrderProcessor {
                 status
     }
 
-    private fun formatHeader(customerName: String): String {
-        return "Receipt for " + customerName.trim().uppercase()
+    private fun calculateTotal(unitPrice: Int, quantity: Int, discount: Int): Int {
+        val subtotal = unitPrice * quantity
+        val discountedSubtotal = subtotal - discount
+        val tax = (discountedSubtotal * PricingPolicy().taxRate).toInt()
+        return discountedSubtotal + tax
     }
 
-    private fun centsToDollars(cents: Int): Double {
-        return cents / 100.0
-    }
-
-    private fun formatPaymentStatus(total: Int, discount: Int): String {
+    private fun describePaymentStatus(total: Int, discount: Int): String {
         if (total > 0 && discount > 0) {
             return "Discount applied"
         }

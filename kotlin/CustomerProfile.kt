@@ -1,23 +1,30 @@
 class CustomerProfile(
-    private val fullName: String,
-    private val street: String,
-    private val city: String,
-    private val postalCode: String,
-    var loyaltyPoints: Int
+    fullName: String,
+    street: String,
+    city: String,
+    postalCode: String,
+    private var loyaltyPoints: Int
 ) {
+    private val displayName: String = fullName
+    private val address: Address = Address(street, city, postalCode)
+
     fun mailingLabel(): String {
-        return "$fullName\n$street\n$city $postalCode"
+        return "$displayName\n${address.format()}"
     }
 
-    fun canReceivePromotion(optedIn: Boolean, bouncedEmail: Boolean, purchaseCount: Int): Boolean {
-        if (optedIn && !bouncedEmail && purchaseCount > 0) {
-            return true
+    fun canReceivePromotion(emailOptedIn: Boolean, bouncedEmail: Boolean, purchaseCount: Int): Boolean {
+        if (!emailOptedIn || bouncedEmail || purchaseCount <= 0) {
+            return false
         }
-        return false
+        return true
     }
 
     fun addPurchase(amountCents: Int) {
-        val points = amountCents / 100
-        loyaltyPoints += points
+        val earnedPoints = amountCents / 100
+        loyaltyPoints += earnedPoints
+    }
+
+    fun getLoyaltyPoints(): Int {
+        return loyaltyPoints
     }
 }
