@@ -1,15 +1,18 @@
-export class OrderProcessor {
-    private readonly taxRate = 0.08;
+import { PricingPolicy } from "./PricingPolicy";
+import { ReceiptFormatter } from "./ReceiptFormatter";
 
-    buildReceipt(customerName: string, unitPrice: number, quantity: number, discount: number): string {
+export class OrderProcessor {
+    private readonly formatter = new ReceiptFormatter();
+
+    buildReceipt(buyerName: string, unitPrice: number, quantity: number, discount: number): string {
+        const total = this.calculateTotal(unitPrice, quantity, discount);
         const subtotal = unitPrice * quantity;
         const discountedSubtotal = subtotal - discount;
-        const tax = Math.floor(discountedSubtotal * this.taxRate);
-        const total = discountedSubtotal + tax;
+        const tax = Math.floor(discountedSubtotal * new PricingPolicy().taxRate);
 
-        const header = this.formatHeader(customerName);
-        const dollars = this.centsToDollars(total);
-        const status = this.formatPaymentStatus(total, discount);
+        const header = this.formatter.createReceiptHeader(buyerName);
+        const dollars = total / 100.0;
+        const status = this.describePaymentStatus(total, discount);
 
         return (
             `${header}\n` +
@@ -21,15 +24,14 @@ export class OrderProcessor {
         );
     }
 
-    private formatHeader(customerName: string): string {
-        return "Receipt for " + customerName.trim().toUpperCase();
+    private calculateTotal(unitPrice: number, quantity: number, discount: number): number {
+        const subtotal = unitPrice * quantity;
+        const discountedSubtotal = subtotal - discount;
+        const tax = Math.floor(discountedSubtotal * new PricingPolicy().taxRate);
+        return discountedSubtotal + tax;
     }
 
-    private centsToDollars(cents: number): number {
-        return cents / 100.0;
-    }
-
-    private formatPaymentStatus(total: number, discount: number): string {
+    private describePaymentStatus(total: number, discount: number): string {
         if (total > 0 && discount > 0) {
             return "Discount applied";
         }

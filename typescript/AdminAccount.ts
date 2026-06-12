@@ -1,13 +1,10 @@
-export class AdminAccount {
-    protected username: string;
+import { Account } from "./Account";
+
+export class AdminAccount extends Account {
     private accessLevel = "admin";
 
     constructor(username: string) {
-        this.username = username;
-    }
-
-    displayName(): string {
-        return this.username.trim().toUpperCase();
+        super(username);
     }
 
     canManageUsers(): boolean {
