@@ -1,17 +1,20 @@
+import { PricingPolicy } from "./PricingPolicy.js";
+import { ReceiptFormatter } from "./ReceiptFormatter.js";
+
 export class OrderProcessor {
     constructor() {
-        this._taxRate = 0.08;
+        this._formatter = new ReceiptFormatter();
     }
 
-    buildReceipt(customerName, unitPrice, quantity, discount) {
+    buildReceipt(buyerName, unitPrice, quantity, discount) {
+        const total = this.calculateTotal(unitPrice, quantity, discount);
         const subtotal = unitPrice * quantity;
         const discountedSubtotal = subtotal - discount;
-        const tax = Math.floor(discountedSubtotal * this._taxRate);
-        const total = discountedSubtotal + tax;
+        const tax = Math.floor(discountedSubtotal * new PricingPolicy().taxRate);
 
-        const header = this.formatHeader(customerName);
-        const dollars = this.centsToDollars(total);
-        const status = this.formatPaymentStatus(total, discount);
+        const header = this._formatter.createReceiptHeader(buyerName);
+        const dollars = total / 100.0;
+        const status = this.describePaymentStatus(total, discount);
 
         return (
             `${header}\n` +
@@ -23,15 +26,14 @@ export class OrderProcessor {
         );
     }
 
-    formatHeader(customerName) {
-        return "Receipt for " + customerName.trim().toUpperCase();
+    calculateTotal(unitPrice, quantity, discount) {
+        const subtotal = unitPrice * quantity;
+        const discountedSubtotal = subtotal - discount;
+        const tax = Math.floor(discountedSubtotal * new PricingPolicy().taxRate);
+        return discountedSubtotal + tax;
     }
 
-    centsToDollars(cents) {
-        return cents / 100.0;
-    }
-
-    formatPaymentStatus(total, discount) {
+    describePaymentStatus(total, discount) {
         if (total > 0 && discount > 0) {
             return "Discount applied";
         }

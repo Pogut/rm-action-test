@@ -1,11 +1,9 @@
-export class AdminAccount {
-    constructor(username) {
-        this._username = username;
-        this._accessLevel = "admin";
-    }
+import { Account } from "./Account.js";
 
-    displayName() {
-        return this._username.trim().toUpperCase();
+export class AdminAccount extends Account {
+    constructor(username) {
+        super(username);
+        this._accessLevel = "admin";
     }
 
     canManageUsers() {
