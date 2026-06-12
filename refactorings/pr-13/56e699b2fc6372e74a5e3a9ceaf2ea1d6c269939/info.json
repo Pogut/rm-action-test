@@ -1,0 +1,43 @@
+{
+  "diffInfos" : [ {
+    "srcPath" : "typescript/AdminAccount.ts",
+    "dstPath" : "typescript/AdminAccount.ts",
+    "id" : 0
+  }, {
+    "srcPath" : "typescript/CustomerProfile.ts",
+    "dstPath" : "typescript/CustomerProfile.ts",
+    "id" : 1
+  }, {
+    "srcPath" : "typescript/GuestAccount.ts",
+    "dstPath" : "typescript/GuestAccount.ts",
+    "id" : 2
+  }, {
+    "srcPath" : "typescript/OrderProcessor.ts",
+    "dstPath" : "typescript/OrderProcessor.ts",
+    "id" : 3
+  }, {
+    "srcPath" : "typescript/PricingPolicy.ts",
+    "dstPath" : "typescript/PricingPolicy.ts",
+    "id" : 4
+  }, {
+    "srcPath" : "typescript/ReceiptFormatter.ts",
+    "dstPath" : "typescript/ReceiptFormatter.ts",
+    "id" : 5
+  }, {
+    "srcPath" : "typescript/AdminAccount.ts",
+    "dstPath" : "typescript/Account.ts",
+    "id" : 6
+  }, {
+    "srcPath" : "typescript/CustomerProfile.ts",
+    "dstPath" : "typescript/Address.ts",
+    "id" : 7
+  }, {
+    "srcPath" : "typescript/GuestAccount.ts",
+    "dstPath" : "typescript/Account.ts",
+    "id" : 8
+  }, {
+    "srcPath" : "typescript/OrderProcessor.ts",
+    "dstPath" : "typescript/ReceiptFormatter.ts",
+    "id" : 9
+  } ]
+}
