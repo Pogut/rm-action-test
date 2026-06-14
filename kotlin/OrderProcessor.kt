@@ -37,6 +37,3 @@ class OrderProcessor {
         return "No payment required"
     }
 }
-
-
-// test commit
