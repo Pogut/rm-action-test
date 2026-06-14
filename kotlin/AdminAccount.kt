@@ -5,3 +5,5 @@ class AdminAccount(username: String) : Account(username) {
         return accessLevel == "admin"
     }
 }
+
+// test
