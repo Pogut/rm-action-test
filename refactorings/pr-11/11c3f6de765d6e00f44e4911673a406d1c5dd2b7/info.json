@@ -1,0 +1,39 @@
+{
+  "diffInfos" : [ {
+    "srcPath" : "javascript/AdminAccount.js",
+    "dstPath" : "javascript/AdminAccount.js",
+    "id" : 0
+  }, {
+    "srcPath" : "javascript/CustomerProfile.js",
+    "dstPath" : "javascript/CustomerProfile.js",
+    "id" : 1
+  }, {
+    "srcPath" : "javascript/GuestAccount.js",
+    "dstPath" : "javascript/GuestAccount.js",
+    "id" : 2
+  }, {
+    "srcPath" : "javascript/OrderProcessor.js",
+    "dstPath" : "javascript/OrderProcessor.js",
+    "id" : 3
+  }, {
+    "srcPath" : "javascript/PricingPolicy.js",
+    "dstPath" : "javascript/PricingPolicy.js",
+    "id" : 4
+  }, {
+    "srcPath" : "javascript/ReceiptFormatter.js",
+    "dstPath" : "javascript/ReceiptFormatter.js",
+    "id" : 5
+  }, {
+    "srcPath" : "javascript/AdminAccount.js",
+    "dstPath" : "javascript/Account.js",
+    "id" : 6
+  }, {
+    "srcPath" : "javascript/GuestAccount.js",
+    "dstPath" : "javascript/Account.js",
+    "id" : 7
+  }, {
+    "srcPath" : "javascript/OrderProcessor.js",
+    "dstPath" : "javascript/ReceiptFormatter.js",
+    "id" : 8
+  } ]
+}
