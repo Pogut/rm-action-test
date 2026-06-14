@@ -9,3 +9,5 @@ export class Address {
         return `${this._street}\n${this._city} ${this._postalCode}`;
     }
 }
+
+// testing
