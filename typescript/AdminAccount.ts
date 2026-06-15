@@ -11,3 +11,5 @@ export class AdminAccount extends Account {
         return this.accessLevel === "admin";
     }
 }
+
+// test
