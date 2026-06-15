@@ -7,3 +7,5 @@ class Address(
         return "$street\n$city $postalCode"
     }
 }
+
+// test
