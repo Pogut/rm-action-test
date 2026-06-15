@@ -9,3 +9,5 @@ export class GuestAccount extends Account {
         return this.username.length > 0;
     }
 }
+
+// testing typescript code
