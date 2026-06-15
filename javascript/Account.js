@@ -7,3 +7,5 @@ export class Account {
         return this._username.trim().toUpperCase();
     }
 }
+
+// testing javascript code
