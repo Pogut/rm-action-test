@@ -6,3 +6,5 @@ class Address:
 
     def format(self):
         return f"{self._street}\n{self._city} {self._postal_code}"
+
+# testing python code
