@@ -1,0 +1,43 @@
+{
+  "diffInfos" : [ {
+    "srcPath" : "python/admin_account.py",
+    "dstPath" : "python/admin_account.py",
+    "id" : 0
+  }, {
+    "srcPath" : "python/customer_profile.py",
+    "dstPath" : "python/customer_profile.py",
+    "id" : 1
+  }, {
+    "srcPath" : "python/guest_account.py",
+    "dstPath" : "python/guest_account.py",
+    "id" : 2
+  }, {
+    "srcPath" : "python/order_processor.py",
+    "dstPath" : "python/order_processor.py",
+    "id" : 3
+  }, {
+    "srcPath" : "python/pricing_policy.py",
+    "dstPath" : "python/pricing_policy.py",
+    "id" : 4
+  }, {
+    "srcPath" : "python/receipt_formatter.py",
+    "dstPath" : "python/receipt_formatter.py",
+    "id" : 5
+  }, {
+    "srcPath" : "python/admin_account.py",
+    "dstPath" : "python/account.py",
+    "id" : 6
+  }, {
+    "srcPath" : "python/customer_profile.py",
+    "dstPath" : "python/address.py",
+    "id" : 7
+  }, {
+    "srcPath" : "python/guest_account.py",
+    "dstPath" : "python/account.py",
+    "id" : 8
+  }, {
+    "srcPath" : "python/order_processor.py",
+    "dstPath" : "python/receipt_formatter.py",
+    "id" : 9
+  } ]
+}
