@@ -1,15 +1,13 @@
-export class GuestAccount {
-    protected username: string;
+import { Account } from "./Account";
 
+export class GuestAccount extends Account {
     constructor(username: string) {
-        this.username = username;
-    }
-
-    displayName(): string {
-        return this.username.trim().toUpperCase();
+        super(username);
     }
 
     canBrowseCatalog(): boolean {
         return this.username.length > 0;
     }
 }
+
+// testing typescript code
