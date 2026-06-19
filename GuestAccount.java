@@ -1,12 +1,6 @@
-public class GuestAccount {
-    protected String username;
-
+public class GuestAccount extends Account {
     public GuestAccount(String username) {
-        this.username = username;
-    }
-
-    public String displayName() {
-        return username.trim().toUpperCase();
+        super(username);
     }
 
     public boolean canBrowseCatalog() {

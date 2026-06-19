@@ -1,13 +1,8 @@
-public class AdminAccount {
-    protected String username;
+public class AdminAccount extends Account {
     private final String accessLevel = "admin";
 
     public AdminAccount(String username) {
-        this.username = username;
-    }
-
-    public String displayName() {
-        return username.trim().toUpperCase();
+        super(username);
     }
 
     public boolean canManageUsers() {
