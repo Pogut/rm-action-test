@@ -1,0 +1,47 @@
+{
+  "diffInfos" : [ {
+    "srcPath" : "AdminAccount.java",
+    "dstPath" : "AdminAccount.java",
+    "id" : 0
+  }, {
+    "srcPath" : "kotlin/AdminAccount.kt",
+    "dstPath" : "kotlin/AdminAccount.kt",
+    "id" : 1
+  }, {
+    "srcPath" : "kotlin/CustomerProfile.kt",
+    "dstPath" : "kotlin/CustomerProfile.kt",
+    "id" : 2
+  }, {
+    "srcPath" : "kotlin/GuestAccount.kt",
+    "dstPath" : "kotlin/GuestAccount.kt",
+    "id" : 3
+  }, {
+    "srcPath" : "kotlin/OrderProcessor.kt",
+    "dstPath" : "kotlin/OrderProcessor.kt",
+    "id" : 4
+  }, {
+    "srcPath" : "kotlin/PricingPolicy.kt",
+    "dstPath" : "kotlin/PricingPolicy.kt",
+    "id" : 5
+  }, {
+    "srcPath" : "kotlin/ReceiptFormatter.kt",
+    "dstPath" : "kotlin/ReceiptFormatter.kt",
+    "id" : 6
+  }, {
+    "srcPath" : "kotlin/AdminAccount.kt",
+    "dstPath" : "kotlin/Account.kt",
+    "id" : 7
+  }, {
+    "srcPath" : "kotlin/CustomerProfile.kt",
+    "dstPath" : "kotlin/Address.kt",
+    "id" : 8
+  }, {
+    "srcPath" : "kotlin/GuestAccount.kt",
+    "dstPath" : "kotlin/Account.kt",
+    "id" : 9
+  }, {
+    "srcPath" : "kotlin/OrderProcessor.kt",
+    "dstPath" : "kotlin/ReceiptFormatter.kt",
+    "id" : 10
+  } ]
+}
