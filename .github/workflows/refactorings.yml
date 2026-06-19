@@ -14,6 +14,7 @@ jobs:
         with:
           fetch-depth: 0
       - uses: Pogut/refactoringminer-action@fix/markup-escape-chars
+
         with:
 
           github-token: ${{ secrets.GITHUB_TOKEN }}
