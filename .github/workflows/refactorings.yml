@@ -13,7 +13,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: Pogut/refactoringminer-action@fix/inline-code-link
+      - uses: Pogut/refactoringminer-action@feat/action-extension
         with:
 
           github-token: ${{ secrets.GITHUB_TOKEN }}
