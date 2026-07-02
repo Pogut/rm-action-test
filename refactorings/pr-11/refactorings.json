@@ -1,0 +1,862 @@
+{
+	"url": "https://github.com/Pogut/rm-action-test/pull/11",
+	"refactorings": [{
+	"type": "Change Attribute Access Modifier",
+	"description": "Change Attribute Access Modifier public to private in attribute private loyaltyPoints : Inferred from class CustomerProfile.CustomerProfile",
+	"markup": "**Change Attribute Access Modifier** `public` to `private` in attribute [private loyaltyPoints : Inferred](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-3e8fbd42824a6b837a2e64544be62b2f1734d9a1f8b6cbc19c327c456921dd99R4) from class `CustomerProfile.CustomerProfile`",
+	"leftSideLocations": [{
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public loyaltyPoints : Inferred"
+}],
+	"rightSideLocations": [{
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "attribute declaration with changed access modifier",
+		"codeElement": "private loyaltyPoints : Inferred"
+}]
+},
+{
+	"type": "Rename Attribute",
+	"description": "Rename Attribute _fullName : Inferred to _displayName : Inferred in class CustomerProfile.CustomerProfile",
+	"markup": "**Rename Attribute** [_fullName : Inferred](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-3e8fbd42824a6b837a2e64544be62b2f1734d9a1f8b6cbc19c327c456921dd99L3) to [_displayName : Inferred](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-3e8fbd42824a6b837a2e64544be62b2f1734d9a1f8b6cbc19c327c456921dd99R7) in class `CustomerProfile.CustomerProfile`",
+	"leftSideLocations": [{
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 3,
+		"endLine": 3,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "_fullName : Inferred"
+}],
+	"rightSideLocations": [{
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 7,
+		"endLine": 7,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "renamed attribute declaration",
+		"codeElement": "_displayName : Inferred"
+}]
+},
+{
+	"type": "Invert Condition",
+	"description": "Invert Condition if(optedIn && !bouncedEmail && purchaseCount > 0) to if(!emailOptedIn || bouncedEmail || purchaseCount <= 0) in method private canReceivePromotion(emailOptedIn, bouncedEmail, purchaseCount) from class CustomerProfile.CustomerProfile",
+	"markup": "**Invert Condition** [if(optedIn && !bouncedEmail && purchaseCount > 0)](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-3e8fbd42824a6b837a2e64544be62b2f1734d9a1f8b6cbc19c327c456921dd99L15) to [if(!emailOptedIn || bouncedEmail || purchaseCount <= 0)](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-3e8fbd42824a6b837a2e64544be62b2f1734d9a1f8b6cbc19c327c456921dd99R17) in method `private canReceivePromotion(emailOptedIn, bouncedEmail, purchaseCount)` from class `CustomerProfile.CustomerProfile`",
+	"leftSideLocations": [{
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 15,
+		"endLine": 17,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "IF_STATEMENT",
+		"description": "original conditional",
+		"codeElement": "if(optedIn && !bouncedEmail && purchaseCount > 0)"
+}, {
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 14,
+		"endLine": 19,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private canReceivePromotion(optedIn Inferred, bouncedEmail Inferred, purchaseCount Inferred)"
+}],
+	"rightSideLocations": [{
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 17,
+		"endLine": 19,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "IF_STATEMENT",
+		"description": "inverted conditional",
+		"codeElement": "if(!emailOptedIn || bouncedEmail || purchaseCount <= 0)"
+}, {
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 16,
+		"endLine": 21,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "method declaration with inverted conditional",
+		"codeElement": "private canReceivePromotion(emailOptedIn Inferred, bouncedEmail Inferred, purchaseCount Inferred)"
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter optedIn : Inferred to emailOptedIn : Inferred in method private canReceivePromotion(emailOptedIn, bouncedEmail, purchaseCount) from class CustomerProfile.CustomerProfile",
+	"markup": "**Rename Parameter** [optedIn : Inferred](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-3e8fbd42824a6b837a2e64544be62b2f1734d9a1f8b6cbc19c327c456921dd99L14) to [emailOptedIn : Inferred](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-3e8fbd42824a6b837a2e64544be62b2f1734d9a1f8b6cbc19c327c456921dd99R16) in method `private canReceivePromotion(emailOptedIn, bouncedEmail, purchaseCount)` from class `CustomerProfile.CustomerProfile`",
+	"leftSideLocations": [{
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 14,
+		"endLine": 14,
+		"startColumn": 25,
+		"endColumn": 0,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "original variable declaration",
+		"codeElement": "optedIn : Inferred"
+}, {
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 15,
+		"endLine": 17,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 25,
+		"endColumn": 0,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "renamed variable declaration",
+		"codeElement": "emailOptedIn : Inferred"
+}, {
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 17,
+		"endLine": 19,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "IF_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Variable",
+	"description": "Rename Variable points : Inferred to earnedPoints : Inferred in method private addPurchase(amountCents) from class CustomerProfile.CustomerProfile",
+	"markup": "**Rename Variable** [points : Inferred](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-3e8fbd42824a6b837a2e64544be62b2f1734d9a1f8b6cbc19c327c456921dd99L22) to [earnedPoints : Inferred](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-3e8fbd42824a6b837a2e64544be62b2f1734d9a1f8b6cbc19c327c456921dd99R24) in method `private addPurchase(amountCents)` from class `CustomerProfile.CustomerProfile`",
+	"leftSideLocations": [{
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 15,
+		"endColumn": 0,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "original variable declaration",
+		"codeElement": "points : Inferred"
+}, {
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 22,
+		"endLine": 22,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 15,
+		"endColumn": 0,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "renamed variable declaration",
+		"codeElement": "earnedPoints : Inferred"
+}, {
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 24,
+		"endLine": 24,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Method",
+	"description": "Rename Method private formatPaymentStatus(total, discount) renamed to private describePaymentStatus(total, discount) in class OrderProcessor.OrderProcessor",
+	"markup": "**Rename Method** `private formatPaymentStatus(total, discount)` renamed to `private describePaymentStatus(total, discount)` in class `OrderProcessor.OrderProcessor`",
+	"leftSideLocations": [{
+		"filePath": "javascript/OrderProcessor.js",
+		"startLine": 34,
+		"endLine": 42,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private formatPaymentStatus(total Inferred, discount Inferred)"
+}],
+	"rightSideLocations": [{
+		"filePath": "javascript/OrderProcessor.js",
+		"startLine": 36,
+		"endLine": 44,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "renamed method declaration",
+		"codeElement": "private describePaymentStatus(total Inferred, discount Inferred)"
+}]
+},
+{
+	"type": "Inline Method",
+	"description": "Inline Method private centsToDollars(cents) inlined to private buildReceipt(buyerName, unitPrice, quantity, discount) in class OrderProcessor.OrderProcessor",
+	"markup": "**Inline Method** `private centsToDollars(cents)` inlined to `private buildReceipt(buyerName, unitPrice, quantity, discount)` in class `OrderProcessor.OrderProcessor`",
+	"leftSideLocations": [{
+		"filePath": "javascript/OrderProcessor.js",
+		"startLine": 30,
+		"endLine": 32,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "inlined method declaration",
+		"codeElement": "private centsToDollars(cents Inferred)"
+}, {
+		"filePath": "javascript/OrderProcessor.js",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "inlined code from inlined method declaration",
+		"codeElement": null
+}, {
+		"filePath": "javascript/OrderProcessor.js",
+		"startLine": 6,
+		"endLine": 24,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration before inline",
+		"codeElement": "private buildReceipt(customerName Inferred, unitPrice Inferred, quantity Inferred, discount Inferred)"
+}, {
+		"filePath": "javascript/OrderProcessor.js",
+		"startLine": 13,
+		"endLine": 13,
+		"startColumn": 25,
+		"endColumn": 0,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "inlined method invocation",
+		"codeElement": "this.centsToDollars(total)"
+}],
+	"rightSideLocations": [{
+		"filePath": "javascript/OrderProcessor.js",
+		"startLine": 9,
+		"endLine": 27,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration after inline",
+		"codeElement": "private buildReceipt(buyerName Inferred, unitPrice Inferred, quantity Inferred, discount Inferred)"
+}, {
+		"filePath": "javascript/OrderProcessor.js",
+		"startLine": 16,
+		"endLine": 16,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "inlined code in target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Extract Method",
+	"description": "Extract Method private calculateTotal(unitPrice, quantity, discount) extracted from private buildReceipt(customerName, unitPrice, quantity, discount) in class OrderProcessor.OrderProcessor",
+	"markup": "**Extract Method** `private calculateTotal(unitPrice, quantity, discount)` extracted from `private buildReceipt(customerName, unitPrice, quantity, discount)` in class `OrderProcessor.OrderProcessor`",
+	"leftSideLocations": [{
+		"filePath": "javascript/OrderProcessor.js",
+		"startLine": 6,
+		"endLine": 24,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration before extraction",
+		"codeElement": "private buildReceipt(customerName Inferred, unitPrice Inferred, quantity Inferred, discount Inferred)"
+}, {
+		"filePath": "javascript/OrderProcessor.js",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "javascript/OrderProcessor.js",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "javascript/OrderProcessor.js",
+		"startLine": 29,
+		"endLine": 34,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "extracted method declaration",
+		"codeElement": "private calculateTotal(unitPrice Inferred, quantity Inferred, discount Inferred)"
+}, {
+		"filePath": "javascript/OrderProcessor.js",
+		"startLine": 32,
+		"endLine": 32,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "javascript/OrderProcessor.js",
+		"startLine": 33,
+		"endLine": 33,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "RETURN_STATEMENT",
+		"description": "extracted code to extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "javascript/OrderProcessor.js",
+		"startLine": 9,
+		"endLine": 27,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration after extraction",
+		"codeElement": "private buildReceipt(buyerName Inferred, unitPrice Inferred, quantity Inferred, discount Inferred)"
+}, {
+		"filePath": "javascript/OrderProcessor.js",
+		"startLine": 10,
+		"endLine": 10,
+		"startColumn": 23,
+		"endColumn": 0,
+		"codeElementType": "METHOD_INVOCATION",
+		"description": "extracted method invocation",
+		"codeElement": "this.calculateTotal(unitPrice,quantity,discount)"
+}, {
+		"filePath": "javascript/OrderProcessor.js",
+		"startLine": 30,
+		"endLine": 30,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}, {
+		"filePath": "javascript/OrderProcessor.js",
+		"startLine": 31,
+		"endLine": 31,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "added statement in extracted method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Rename Parameter",
+	"description": "Rename Parameter customerName : Inferred to buyerName : Inferred in method private buildReceipt(buyerName, unitPrice, quantity, discount) from class OrderProcessor.OrderProcessor",
+	"markup": "**Rename Parameter** [customerName : Inferred](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-38546eadb08a5885e264179014faf2f2b1637378a775510f5fd07ddb5ba1b7fcL6) to [buyerName : Inferred](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-38546eadb08a5885e264179014faf2f2b1637378a775510f5fd07ddb5ba1b7fcR9) in method `private buildReceipt(buyerName, unitPrice, quantity, discount)` from class `OrderProcessor.OrderProcessor`",
+	"leftSideLocations": [{
+		"filePath": "javascript/OrderProcessor.js",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 18,
+		"endColumn": 0,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "original variable declaration",
+		"codeElement": "customerName : Inferred"
+}, {
+		"filePath": "javascript/OrderProcessor.js",
+		"startLine": 12,
+		"endLine": 12,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the original variable",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "javascript/OrderProcessor.js",
+		"startLine": 9,
+		"endLine": 9,
+		"startColumn": 18,
+		"endColumn": 0,
+		"codeElementType": "VARIABLE_DECLARATION_EXPRESSION",
+		"description": "renamed variable declaration",
+		"codeElement": "buyerName : Inferred"
+}, {
+		"filePath": "javascript/OrderProcessor.js",
+		"startLine": 15,
+		"endLine": 15,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "VARIABLE_DECLARATION_STATEMENT",
+		"description": "statement referencing the renamed variable",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public _street : Inferred from class CustomerProfile.CustomerProfile to public _street : Inferred from class Address.Address",
+	"markup": "**Move Attribute** [public _street : Inferred](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-3e8fbd42824a6b837a2e64544be62b2f1734d9a1f8b6cbc19c327c456921dd99L4) from class `CustomerProfile.CustomerProfile` to [public _street : Inferred](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-39fd44f13dc571ff5d0c4104642150456777d392b37bd5bcd8b2dae06b9a6c04R3) from class `Address.Address`",
+	"leftSideLocations": [{
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public _street : Inferred"
+}],
+	"rightSideLocations": [{
+		"filePath": "javascript/Address.js",
+		"startLine": 3,
+		"endLine": 3,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public _street : Inferred"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public _city : Inferred from class CustomerProfile.CustomerProfile to public _city : Inferred from class Address.Address",
+	"markup": "**Move Attribute** [public _city : Inferred](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-3e8fbd42824a6b837a2e64544be62b2f1734d9a1f8b6cbc19c327c456921dd99L5) from class `CustomerProfile.CustomerProfile` to [public _city : Inferred](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-39fd44f13dc571ff5d0c4104642150456777d392b37bd5bcd8b2dae06b9a6c04R4) from class `Address.Address`",
+	"leftSideLocations": [{
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public _city : Inferred"
+}],
+	"rightSideLocations": [{
+		"filePath": "javascript/Address.js",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public _city : Inferred"
+}]
+},
+{
+	"type": "Move Attribute",
+	"description": "Move Attribute public _postalCode : Inferred from class CustomerProfile.CustomerProfile to public _postalCode : Inferred from class Address.Address",
+	"markup": "**Move Attribute** [public _postalCode : Inferred](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-3e8fbd42824a6b837a2e64544be62b2f1734d9a1f8b6cbc19c327c456921dd99L6) from class `CustomerProfile.CustomerProfile` to [public _postalCode : Inferred](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-39fd44f13dc571ff5d0c4104642150456777d392b37bd5bcd8b2dae06b9a6c04R5) from class `Address.Address`",
+	"leftSideLocations": [{
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public _postalCode : Inferred"
+}],
+	"rightSideLocations": [{
+		"filePath": "javascript/Address.js",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "moved attribute declaration",
+		"codeElement": "public _postalCode : Inferred"
+}]
+},
+{
+	"type": "Extract Class",
+	"description": "Extract Class Address.Address from class CustomerProfile.CustomerProfile",
+	"markup": "**Extract Class** [Address.Address](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-39fd44f13dc571ff5d0c4104642150456777d392b37bd5bcd8b2dae06b9a6c04R1) from class [CustomerProfile.CustomerProfile](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-3e8fbd42824a6b837a2e64544be62b2f1734d9a1f8b6cbc19c327c456921dd99L1)",
+	"leftSideLocations": [{
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 1,
+		"endLine": 25,
+		"startColumn": 8,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "original type declaration",
+		"codeElement": "CustomerProfile.CustomerProfile"
+}, {
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public _street : Inferred"
+}, {
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public _city : Inferred"
+}, {
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public _postalCode : Inferred"
+}],
+	"rightSideLocations": [{
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 3,
+		"endLine": 31,
+		"startColumn": 8,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "type declaration after extraction",
+		"codeElement": "CustomerProfile.CustomerProfile"
+}, {
+		"filePath": "javascript/Address.js",
+		"startLine": 1,
+		"endLine": 11,
+		"startColumn": 8,
+		"endColumn": 0,
+		"codeElementType": "TYPE_DECLARATION",
+		"description": "extracted type declaration",
+		"codeElement": "Address.Address"
+}, {
+		"filePath": "javascript/Address.js",
+		"startLine": 3,
+		"endLine": 3,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public _street : Inferred"
+}, {
+		"filePath": "javascript/Address.js",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public _city : Inferred"
+}, {
+		"filePath": "javascript/Address.js",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "extracted attribute declaration",
+		"codeElement": "public _postalCode : Inferred"
+}]
+},
+{
+	"type": "Move And Rename Method",
+	"description": "Move And Rename Method private formatHeader(customerName) from class OrderProcessor.OrderProcessor to private createReceiptHeader(customerName) from class ReceiptFormatter.ReceiptFormatter",
+	"markup": "**Move And Rename Method** `private formatHeader(customerName)` from class `OrderProcessor.OrderProcessor` to `private createReceiptHeader(customerName)` from class `ReceiptFormatter.ReceiptFormatter`",
+	"leftSideLocations": [{
+		"filePath": "javascript/OrderProcessor.js",
+		"startLine": 26,
+		"endLine": 28,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private formatHeader(customerName Inferred)"
+}],
+	"rightSideLocations": [{
+		"filePath": "javascript/ReceiptFormatter.js",
+		"startLine": 2,
+		"endLine": 4,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "moved method declaration",
+		"codeElement": "private createReceiptHeader(customerName Inferred)"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method private displayName() from class AdminAccount.AdminAccount to private displayName() from class Account.Account",
+	"markup": "**Pull Up Method** [private displayName()](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-29b674cac7fb05b9cb706cb4e3468e76f95eb9f89421089cbf4ee0c38dadef78L7) from class `AdminAccount.AdminAccount` to [private displayName()](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-9cb825fe08663747a9da1b34e848f62879124b73c4aeb7686f3937a114547fa7R6) from class `Account.Account`",
+	"leftSideLocations": [{
+		"filePath": "javascript/AdminAccount.js",
+		"startLine": 7,
+		"endLine": 9,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private displayName()"
+}],
+	"rightSideLocations": [{
+		"filePath": "javascript/Account.js",
+		"startLine": 6,
+		"endLine": 8,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "private displayName()"
+}]
+},
+{
+	"type": "Pull Up Method",
+	"description": "Pull Up Method private displayName() from class GuestAccount.GuestAccount to private displayName() from class Account.Account",
+	"markup": "**Pull Up Method** [private displayName()](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-afbc36c74d84c22057ec1be081f2b0c008f2227d96558a3b60a0fba510cbf98cL6) from class `GuestAccount.GuestAccount` to [private displayName()](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-9cb825fe08663747a9da1b34e848f62879124b73c4aeb7686f3937a114547fa7R6) from class `Account.Account`",
+	"leftSideLocations": [{
+		"filePath": "javascript/GuestAccount.js",
+		"startLine": 6,
+		"endLine": 8,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "original method declaration",
+		"codeElement": "private displayName()"
+}],
+	"rightSideLocations": [{
+		"filePath": "javascript/Account.js",
+		"startLine": 6,
+		"endLine": 8,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "pulled up method declaration",
+		"codeElement": "private displayName()"
+}]
+},
+{
+	"type": "Move Code",
+	"description": "Move Code from private constructor(username) in class AdminAccount.AdminAccount to private constructor(username) in class Account.Account",
+	"markup": "**Move Code** from `private constructor(username)` in class `AdminAccount.AdminAccount` to `private constructor(username)` in class `Account.Account`",
+	"leftSideLocations": [{
+		"filePath": "javascript/AdminAccount.js",
+		"startLine": 2,
+		"endLine": 5,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration",
+		"codeElement": "private constructor(username Inferred)"
+}, {
+		"filePath": "javascript/AdminAccount.js",
+		"startLine": 3,
+		"endLine": 3,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "javascript/Account.js",
+		"startLine": 2,
+		"endLine": 4,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration",
+		"codeElement": "private constructor(username Inferred)"
+}, {
+		"filePath": "javascript/Account.js",
+		"startLine": 3,
+		"endLine": 3,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Code",
+	"description": "Move Code from private constructor(fullName, street, city, postalCode, loyaltyPoints) in class CustomerProfile.CustomerProfile to private constructor(street, city, postalCode) in class Address.Address",
+	"markup": "**Move Code** from `private constructor(fullName, street, city, postalCode, loyaltyPoints)` in class `CustomerProfile.CustomerProfile` to `private constructor(street, city, postalCode)` in class `Address.Address`",
+	"leftSideLocations": [{
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 2,
+		"endLine": 8,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration",
+		"codeElement": "private constructor(fullName Inferred, street Inferred, city Inferred, postalCode Inferred, loyaltyPoints Inferred)"
+}, {
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}, {
+		"filePath": "javascript/CustomerProfile.js",
+		"startLine": 6,
+		"endLine": 6,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "javascript/Address.js",
+		"startLine": 2,
+		"endLine": 6,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration",
+		"codeElement": "private constructor(street Inferred, city Inferred, postalCode Inferred)"
+}, {
+		"filePath": "javascript/Address.js",
+		"startLine": 3,
+		"endLine": 3,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "javascript/Address.js",
+		"startLine": 4,
+		"endLine": 4,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}, {
+		"filePath": "javascript/Address.js",
+		"startLine": 5,
+		"endLine": 5,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Move Code",
+	"description": "Move Code from private constructor(username) in class GuestAccount.GuestAccount to private constructor(username) in class Account.Account",
+	"markup": "**Move Code** from `private constructor(username)` in class `GuestAccount.GuestAccount` to `private constructor(username)` in class `Account.Account`",
+	"leftSideLocations": [{
+		"filePath": "javascript/GuestAccount.js",
+		"startLine": 2,
+		"endLine": 4,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "source method declaration",
+		"codeElement": "private constructor(username Inferred)"
+}, {
+		"filePath": "javascript/GuestAccount.js",
+		"startLine": 3,
+		"endLine": 3,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code from source method declaration",
+		"codeElement": null
+}],
+	"rightSideLocations": [{
+		"filePath": "javascript/Account.js",
+		"startLine": 2,
+		"endLine": 4,
+		"startColumn": 5,
+		"endColumn": 0,
+		"codeElementType": "METHOD_DECLARATION",
+		"description": "target method declaration",
+		"codeElement": "private constructor(username Inferred)"
+}, {
+		"filePath": "javascript/Account.js",
+		"startLine": 3,
+		"endLine": 3,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "EXPRESSION_STATEMENT",
+		"description": "moved code to target method declaration",
+		"codeElement": null
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute public _username : Inferred from class AdminAccount.AdminAccount to public _username : Inferred from class Account.Account",
+	"markup": "**Pull Up Attribute** [public _username : Inferred](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-29b674cac7fb05b9cb706cb4e3468e76f95eb9f89421089cbf4ee0c38dadef78L3) from class `AdminAccount.AdminAccount` to [public _username : Inferred](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-9cb825fe08663747a9da1b34e848f62879124b73c4aeb7686f3937a114547fa7R3) from class `Account.Account`",
+	"leftSideLocations": [{
+		"filePath": "javascript/AdminAccount.js",
+		"startLine": 3,
+		"endLine": 3,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public _username : Inferred"
+}],
+	"rightSideLocations": [{
+		"filePath": "javascript/Account.js",
+		"startLine": 3,
+		"endLine": 3,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "public _username : Inferred"
+}]
+},
+{
+	"type": "Pull Up Attribute",
+	"description": "Pull Up Attribute public _username : Inferred from class GuestAccount.GuestAccount to public _username : Inferred from class Account.Account",
+	"markup": "**Pull Up Attribute** [public _username : Inferred](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-afbc36c74d84c22057ec1be081f2b0c008f2227d96558a3b60a0fba510cbf98cL3) from class `GuestAccount.GuestAccount` to [public _username : Inferred](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-9cb825fe08663747a9da1b34e848f62879124b73c4aeb7686f3937a114547fa7R3) from class `Account.Account`",
+	"leftSideLocations": [{
+		"filePath": "javascript/GuestAccount.js",
+		"startLine": 3,
+		"endLine": 3,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "original attribute declaration",
+		"codeElement": "public _username : Inferred"
+}],
+	"rightSideLocations": [{
+		"filePath": "javascript/Account.js",
+		"startLine": 3,
+		"endLine": 3,
+		"startColumn": 9,
+		"endColumn": 0,
+		"codeElementType": "FIELD_DECLARATION",
+		"description": "pulled up attribute declaration",
+		"codeElement": "public _username : Inferred"
+}]
+}
+]
+}
