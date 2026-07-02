@@ -53,7 +53,7 @@
 {
 	"type": "Invert Condition",
 	"description": "Invert Condition if(optedIn && !bouncedEmail && purchaseCount > 0) to if(!emailOptedIn || bouncedEmail || purchaseCount <= 0) in method private canReceivePromotion(emailOptedIn, bouncedEmail, purchaseCount) from class CustomerProfile.CustomerProfile",
-	"markup": "**Invert Condition** [if(optedIn && !bouncedEmail && purchaseCount > 0)](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-3e8fbd42824a6b837a2e64544be62b2f1734d9a1f8b6cbc19c327c456921dd99L15) to [if(!emailOptedIn || bouncedEmail || purchaseCount <= 0)](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-3e8fbd42824a6b837a2e64544be62b2f1734d9a1f8b6cbc19c327c456921dd99R17) in method `private canReceivePromotion(emailOptedIn, bouncedEmail, purchaseCount)` from class `CustomerProfile.CustomerProfile`",
+	"markup": "**Invert Condition** [if(optedIn && !bouncedEmail && purchaseCount > 0)](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-3e8fbd42824a6b837a2e64544be62b2f1734d9a1f8b6cbc19c327c456921dd99L15) to [if(!emailOptedIn || bouncedEmail || purchaseCount <= 0)](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-3e8fbd42824a6b837a2e64544be62b2f1734d9a1f8b6cbc19c327c456921dd99R17) in method [private canReceivePromotion(emailOptedIn, bouncedEmail, purchaseCount)](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-3e8fbd42824a6b837a2e64544be62b2f1734d9a1f8b6cbc19c327c456921dd99R16) from class `CustomerProfile.CustomerProfile`",
 	"leftSideLocations": [{
 		"filePath": "javascript/CustomerProfile.js",
 		"startLine": 15,
@@ -71,7 +71,7 @@
 		"endColumn": 0,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "original method declaration",
-		"codeElement": "private canReceivePromotion(optedIn Inferred, bouncedEmail Inferred, purchaseCount Inferred)"
+		"codeElement": "private canReceivePromotion(optedIn, bouncedEmail, purchaseCount)"
 }],
 	"rightSideLocations": [{
 		"filePath": "javascript/CustomerProfile.js",
@@ -90,7 +90,7 @@
 		"endColumn": 0,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "method declaration with inverted conditional",
-		"codeElement": "private canReceivePromotion(emailOptedIn Inferred, bouncedEmail Inferred, purchaseCount Inferred)"
+		"codeElement": "private canReceivePromotion(emailOptedIn, bouncedEmail, purchaseCount)"
 }]
 },
 {
@@ -182,7 +182,7 @@
 {
 	"type": "Rename Method",
 	"description": "Rename Method private formatPaymentStatus(total, discount) renamed to private describePaymentStatus(total, discount) in class OrderProcessor.OrderProcessor",
-	"markup": "**Rename Method** `private formatPaymentStatus(total, discount)` renamed to `private describePaymentStatus(total, discount)` in class `OrderProcessor.OrderProcessor`",
+	"markup": "**Rename Method** [private formatPaymentStatus(total, discount)](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-38546eadb08a5885e264179014faf2f2b1637378a775510f5fd07ddb5ba1b7fcL34) renamed to [private describePaymentStatus(total, discount)](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-38546eadb08a5885e264179014faf2f2b1637378a775510f5fd07ddb5ba1b7fcR36) in class `OrderProcessor.OrderProcessor`",
 	"leftSideLocations": [{
 		"filePath": "javascript/OrderProcessor.js",
 		"startLine": 34,
@@ -191,7 +191,7 @@
 		"endColumn": 0,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "original method declaration",
-		"codeElement": "private formatPaymentStatus(total Inferred, discount Inferred)"
+		"codeElement": "private formatPaymentStatus(total, discount)"
 }],
 	"rightSideLocations": [{
 		"filePath": "javascript/OrderProcessor.js",
@@ -201,13 +201,13 @@
 		"endColumn": 0,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "renamed method declaration",
-		"codeElement": "private describePaymentStatus(total Inferred, discount Inferred)"
+		"codeElement": "private describePaymentStatus(total, discount)"
 }]
 },
 {
 	"type": "Inline Method",
 	"description": "Inline Method private centsToDollars(cents) inlined to private buildReceipt(buyerName, unitPrice, quantity, discount) in class OrderProcessor.OrderProcessor",
-	"markup": "**Inline Method** `private centsToDollars(cents)` inlined to `private buildReceipt(buyerName, unitPrice, quantity, discount)` in class `OrderProcessor.OrderProcessor`",
+	"markup": "**Inline Method** [private centsToDollars(cents)](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-38546eadb08a5885e264179014faf2f2b1637378a775510f5fd07ddb5ba1b7fcL30) inlined to [private buildReceipt(buyerName, unitPrice, quantity, discount)](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-38546eadb08a5885e264179014faf2f2b1637378a775510f5fd07ddb5ba1b7fcR9) in class `OrderProcessor.OrderProcessor`",
 	"leftSideLocations": [{
 		"filePath": "javascript/OrderProcessor.js",
 		"startLine": 30,
@@ -216,7 +216,7 @@
 		"endColumn": 0,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "inlined method declaration",
-		"codeElement": "private centsToDollars(cents Inferred)"
+		"codeElement": "private centsToDollars(cents)"
 }, {
 		"filePath": "javascript/OrderProcessor.js",
 		"startLine": 31,
@@ -234,7 +234,7 @@
 		"endColumn": 0,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "target method declaration before inline",
-		"codeElement": "private buildReceipt(customerName Inferred, unitPrice Inferred, quantity Inferred, discount Inferred)"
+		"codeElement": "private buildReceipt(customerName, unitPrice, quantity, discount)"
 }, {
 		"filePath": "javascript/OrderProcessor.js",
 		"startLine": 13,
@@ -253,7 +253,7 @@
 		"endColumn": 0,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "target method declaration after inline",
-		"codeElement": "private buildReceipt(buyerName Inferred, unitPrice Inferred, quantity Inferred, discount Inferred)"
+		"codeElement": "private buildReceipt(buyerName, unitPrice, quantity, discount)"
 }, {
 		"filePath": "javascript/OrderProcessor.js",
 		"startLine": 16,
@@ -268,7 +268,7 @@
 {
 	"type": "Extract Method",
 	"description": "Extract Method private calculateTotal(unitPrice, quantity, discount) extracted from private buildReceipt(customerName, unitPrice, quantity, discount) in class OrderProcessor.OrderProcessor",
-	"markup": "**Extract Method** `private calculateTotal(unitPrice, quantity, discount)` extracted from `private buildReceipt(customerName, unitPrice, quantity, discount)` in class `OrderProcessor.OrderProcessor`",
+	"markup": "**Extract Method** [private calculateTotal(unitPrice, quantity, discount)](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-38546eadb08a5885e264179014faf2f2b1637378a775510f5fd07ddb5ba1b7fcR29) extracted from [private buildReceipt(customerName, unitPrice, quantity, discount)](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-38546eadb08a5885e264179014faf2f2b1637378a775510f5fd07ddb5ba1b7fcL6) in class `OrderProcessor.OrderProcessor`",
 	"leftSideLocations": [{
 		"filePath": "javascript/OrderProcessor.js",
 		"startLine": 6,
@@ -277,7 +277,7 @@
 		"endColumn": 0,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "source method declaration before extraction",
-		"codeElement": "private buildReceipt(customerName Inferred, unitPrice Inferred, quantity Inferred, discount Inferred)"
+		"codeElement": "private buildReceipt(customerName, unitPrice, quantity, discount)"
 }, {
 		"filePath": "javascript/OrderProcessor.js",
 		"startLine": 9,
@@ -305,7 +305,7 @@
 		"endColumn": 0,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "extracted method declaration",
-		"codeElement": "private calculateTotal(unitPrice Inferred, quantity Inferred, discount Inferred)"
+		"codeElement": "private calculateTotal(unitPrice, quantity, discount)"
 }, {
 		"filePath": "javascript/OrderProcessor.js",
 		"startLine": 32,
@@ -332,7 +332,7 @@
 		"endColumn": 0,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "source method declaration after extraction",
-		"codeElement": "private buildReceipt(buyerName Inferred, unitPrice Inferred, quantity Inferred, discount Inferred)"
+		"codeElement": "private buildReceipt(buyerName, unitPrice, quantity, discount)"
 }, {
 		"filePath": "javascript/OrderProcessor.js",
 		"startLine": 10,
@@ -571,7 +571,7 @@
 {
 	"type": "Move And Rename Method",
 	"description": "Move And Rename Method private formatHeader(customerName) from class OrderProcessor.OrderProcessor to private createReceiptHeader(customerName) from class ReceiptFormatter.ReceiptFormatter",
-	"markup": "**Move And Rename Method** `private formatHeader(customerName)` from class `OrderProcessor.OrderProcessor` to `private createReceiptHeader(customerName)` from class `ReceiptFormatter.ReceiptFormatter`",
+	"markup": "**Move And Rename Method** [private formatHeader(customerName)](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-38546eadb08a5885e264179014faf2f2b1637378a775510f5fd07ddb5ba1b7fcL26) from class `OrderProcessor.OrderProcessor` to [private createReceiptHeader(customerName)](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-6ad3d4f00475d3b7ec5291024268d7ae13c9f51ede51176a2db1f68c72ac1c46R2) from class `ReceiptFormatter.ReceiptFormatter`",
 	"leftSideLocations": [{
 		"filePath": "javascript/OrderProcessor.js",
 		"startLine": 26,
@@ -580,7 +580,7 @@
 		"endColumn": 0,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "original method declaration",
-		"codeElement": "private formatHeader(customerName Inferred)"
+		"codeElement": "private formatHeader(customerName)"
 }],
 	"rightSideLocations": [{
 		"filePath": "javascript/ReceiptFormatter.js",
@@ -590,7 +590,7 @@
 		"endColumn": 0,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "moved method declaration",
-		"codeElement": "private createReceiptHeader(customerName Inferred)"
+		"codeElement": "private createReceiptHeader(customerName)"
 }]
 },
 {
@@ -646,7 +646,7 @@
 {
 	"type": "Move Code",
 	"description": "Move Code from private constructor(username) in class AdminAccount.AdminAccount to private constructor(username) in class Account.Account",
-	"markup": "**Move Code** from `private constructor(username)` in class `AdminAccount.AdminAccount` to `private constructor(username)` in class `Account.Account`",
+	"markup": "**Move Code** from [private constructor(username)](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-29b674cac7fb05b9cb706cb4e3468e76f95eb9f89421089cbf4ee0c38dadef78L2) in class `AdminAccount.AdminAccount` to [private constructor(username)](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-9cb825fe08663747a9da1b34e848f62879124b73c4aeb7686f3937a114547fa7R2) in class `Account.Account`",
 	"leftSideLocations": [{
 		"filePath": "javascript/AdminAccount.js",
 		"startLine": 2,
@@ -655,7 +655,7 @@
 		"endColumn": 0,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "source method declaration",
-		"codeElement": "private constructor(username Inferred)"
+		"codeElement": "private constructor(username)"
 }, {
 		"filePath": "javascript/AdminAccount.js",
 		"startLine": 3,
@@ -674,7 +674,7 @@
 		"endColumn": 0,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "target method declaration",
-		"codeElement": "private constructor(username Inferred)"
+		"codeElement": "private constructor(username)"
 }, {
 		"filePath": "javascript/Account.js",
 		"startLine": 3,
@@ -689,7 +689,7 @@
 {
 	"type": "Move Code",
 	"description": "Move Code from private constructor(fullName, street, city, postalCode, loyaltyPoints) in class CustomerProfile.CustomerProfile to private constructor(street, city, postalCode) in class Address.Address",
-	"markup": "**Move Code** from `private constructor(fullName, street, city, postalCode, loyaltyPoints)` in class `CustomerProfile.CustomerProfile` to `private constructor(street, city, postalCode)` in class `Address.Address`",
+	"markup": "**Move Code** from [private constructor(fullName, street, city, postalCode, loyaltyPoints)](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-3e8fbd42824a6b837a2e64544be62b2f1734d9a1f8b6cbc19c327c456921dd99L2) in class `CustomerProfile.CustomerProfile` to [private constructor(street, city, postalCode)](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-39fd44f13dc571ff5d0c4104642150456777d392b37bd5bcd8b2dae06b9a6c04R2) in class `Address.Address`",
 	"leftSideLocations": [{
 		"filePath": "javascript/CustomerProfile.js",
 		"startLine": 2,
@@ -698,7 +698,7 @@
 		"endColumn": 0,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "source method declaration",
-		"codeElement": "private constructor(fullName Inferred, street Inferred, city Inferred, postalCode Inferred, loyaltyPoints Inferred)"
+		"codeElement": "private constructor(fullName, street, city, postalCode, loyaltyPoints)"
 }, {
 		"filePath": "javascript/CustomerProfile.js",
 		"startLine": 4,
@@ -735,7 +735,7 @@
 		"endColumn": 0,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "target method declaration",
-		"codeElement": "private constructor(street Inferred, city Inferred, postalCode Inferred)"
+		"codeElement": "private constructor(street, city, postalCode)"
 }, {
 		"filePath": "javascript/Address.js",
 		"startLine": 3,
@@ -768,7 +768,7 @@
 {
 	"type": "Move Code",
 	"description": "Move Code from private constructor(username) in class GuestAccount.GuestAccount to private constructor(username) in class Account.Account",
-	"markup": "**Move Code** from `private constructor(username)` in class `GuestAccount.GuestAccount` to `private constructor(username)` in class `Account.Account`",
+	"markup": "**Move Code** from [private constructor(username)](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-afbc36c74d84c22057ec1be081f2b0c008f2227d96558a3b60a0fba510cbf98cL2) in class `GuestAccount.GuestAccount` to [private constructor(username)](https://github.com/Pogut/rm-action-test/pull/11/changes?diff=split#diff-9cb825fe08663747a9da1b34e848f62879124b73c4aeb7686f3937a114547fa7R2) in class `Account.Account`",
 	"leftSideLocations": [{
 		"filePath": "javascript/GuestAccount.js",
 		"startLine": 2,
@@ -777,7 +777,7 @@
 		"endColumn": 0,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "source method declaration",
-		"codeElement": "private constructor(username Inferred)"
+		"codeElement": "private constructor(username)"
 }, {
 		"filePath": "javascript/GuestAccount.js",
 		"startLine": 3,
@@ -796,7 +796,7 @@
 		"endColumn": 0,
 		"codeElementType": "METHOD_DECLARATION",
 		"description": "target method declaration",
-		"codeElement": "private constructor(username Inferred)"
+		"codeElement": "private constructor(username)"
 }, {
 		"filePath": "javascript/Account.js",
 		"startLine": 3,
