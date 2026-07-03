@@ -10,3 +10,6 @@ export class AdminAccount extends Account {
         return this._accessLevel === "admin";
     }
 }
+
+
+// testing speed
