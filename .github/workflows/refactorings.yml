@@ -3,8 +3,8 @@ on:
   pull_request:
     types: [opened, synchronize, reopened, closed]
 permissions:
-  contents: write
   pages: write
+  id-token: write
   pull-requests: write
 jobs:
   report:
@@ -15,8 +15,6 @@ jobs:
           fetch-depth: 0
       - uses: Pogut/refactoringminer-action@fix/publishing-speed
         with:
-
           github-token: ${{ secrets.GITHUB_TOKEN }}
           image: ghcr.io/pogut/refactoringminer:dev
           #image: tsantalis/refactoringminer:latest
-
