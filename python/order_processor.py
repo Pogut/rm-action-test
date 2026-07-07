@@ -1,16 +1,20 @@
+from pricing_policy import PricingPolicy
+from receipt_formatter import ReceiptFormatter
+
+
 class OrderProcessor:
     def __init__(self):
-        self._tax_rate = 0.08
+        self._formatter = ReceiptFormatter()
 
-    def build_receipt(self, customer_name, unit_price, quantity, discount):
+    def build_receipt(self, buyer_name, unit_price, quantity, discount):
+        total = self._calculate_total(unit_price, quantity, discount)
         subtotal = unit_price * quantity
         discounted_subtotal = subtotal - discount
-        tax = int(discounted_subtotal * self._tax_rate)
-        total = discounted_subtotal + tax
+        tax = int(discounted_subtotal * PricingPolicy().tax_rate)
 
-        header = self._format_header(customer_name)
-        dollars = self._cents_to_dollars(total)
-        status = self._format_payment_status(total, discount)
+        header = self._formatter.create_receipt_header(buyer_name)
+        dollars = total / 100.0
+        status = self._describe_payment_status(total, discount)
 
         return (
             f"{header}\n"
@@ -21,13 +25,13 @@ class OrderProcessor:
             f"{status}"
         )
 
-    def _format_header(self, customer_name):
-        return "Receipt for " + customer_name.strip().upper()
+    def _calculate_total(self, unit_price, quantity, discount):
+        subtotal = unit_price * quantity
+        discounted_subtotal = subtotal - discount
+        tax = int(discounted_subtotal * PricingPolicy().tax_rate)
+        return discounted_subtotal + tax
 
-    def _cents_to_dollars(self, cents):
-        return cents / 100.0
-
-    def _format_payment_status(self, total, discount):
+    def _describe_payment_status(self, total, discount):
         if total > 0 and discount > 0:
             return "Discount applied"
         if total > 0:

@@ -1,9 +1,9 @@
-class GuestAccount:
-    def __init__(self, username):
-        self._username = username
+from account import Account
 
-    def display_name(self):
-        return self._username.strip().upper()
+
+class GuestAccount(Account):
+    def __init__(self, username):
+        super().__init__(username)
 
     def can_browse_catalog(self):
         return len(self._username) > 0
