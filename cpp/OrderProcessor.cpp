@@ -2,8 +2,8 @@
 
 #include <string>
 #include <cmath>
-#include "PricingPolicy.h"
-#include "ReceiptFormatter.h"
+#include "PricingPolicy.cpp"
+#include "ReceiptFormatter.cpp"
 
 class OrderProcessor {
 private:

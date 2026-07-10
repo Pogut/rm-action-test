@@ -1,7 +1,7 @@
 #pragma once
 
 #include <string>
-#include "Account.h"
+#include "Account.cpp"
 
 class AdminAccount : public Account {
 private:
