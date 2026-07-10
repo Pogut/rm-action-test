@@ -4,15 +4,12 @@
 #include <algorithm>
 #include <cctype>
 
-class AdminAccount {
+class Account {
 protected:
     std::string username;
 
-private:
-    std::string accessLevel = "admin";
-
 public:
-    explicit AdminAccount(std::string username)
+    explicit Account(std::string username)
         : username(std::move(username)) {}
 
     std::string displayName() const {
@@ -25,9 +22,5 @@ public:
         std::transform(result.begin(), result.end(), result.begin(),
                        [](unsigned char c) { return std::toupper(c); });
         return result;
-    }
-
-    bool canManageUsers() const {
-        return accessLevel == "admin";
     }
 };
