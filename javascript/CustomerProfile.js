@@ -1,25 +1,31 @@
+import { Address } from "./Address.js";
+
 export class CustomerProfile {
+    #loyaltyPoints;
+
     constructor(fullName, street, city, postalCode, loyaltyPoints) {
-        this._fullName = fullName;
-        this._street = street;
-        this._city = city;
-        this._postalCode = postalCode;
-        this.loyaltyPoints = loyaltyPoints;
+        this._displayName = fullName;
+        this._address = new Address(street, city, postalCode);
+        this.#loyaltyPoints = loyaltyPoints;
     }
 
     mailingLabel() {
-        return `${this._fullName}\n${this._street}\n${this._city} ${this._postalCode}`;
+        return `${this._displayName}\n${this._address.format()}`;
     }
 
-    canReceivePromotion(optedIn, bouncedEmail, purchaseCount) {
-        if (optedIn && !bouncedEmail && purchaseCount > 0) {
-            return true;
+    canReceivePromotion(emailOptedIn, bouncedEmail, purchaseCount) {
+        if (!emailOptedIn || bouncedEmail || purchaseCount <= 0) {
+            return false;
         }
-        return false;
+        return true;
     }
 
     addPurchase(amountCents) {
-        const points = Math.floor(amountCents / 100);
-        this.loyaltyPoints += points;
+        const earnedPoints = Math.floor(amountCents / 100);
+        this.#loyaltyPoints += earnedPoints;
+    }
+
+    getLoyaltyPoints() {
+        return this.#loyaltyPoints;
     }
 }

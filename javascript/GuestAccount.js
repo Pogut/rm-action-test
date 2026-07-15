@@ -1,10 +1,8 @@
-export class GuestAccount {
-    constructor(username) {
-        this._username = username;
-    }
+import { Account } from "./Account.js";
 
-    displayName() {
-        return this._username.trim().toUpperCase();
+export class GuestAccount extends Account {
+    constructor(username) {
+        super(username);
     }
 
     canBrowseCatalog() {
