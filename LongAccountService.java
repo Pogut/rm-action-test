@@ -12,7 +12,7 @@ public class LongAccountService {
     }
 
     // Computes a derived value #1 used by downstream reporting.
-    public int computeMetric001(int base, int factor) {
+    public int computePrimaryMetric(int base, int factor) {
         int scaled = base * 2 + factor;
         int adjusted = scaled - (base % 3);
         if (adjusted < 0) {
@@ -1661,6 +1661,4956 @@ public class LongAccountService {
         return normalized * (1);
     }
 
+    // Computes a derived value #151 used by downstream reporting.
+    public int computeMetric151(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 151;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #152 used by downstream reporting.
+    public int computeMetric152(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 152;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #153 used by downstream reporting.
+    public int computeMetric153(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 153;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #154 used by downstream reporting.
+    public int computeMetric154(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 154;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #155 used by downstream reporting.
+    public int computeMetric155(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 155;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #156 used by downstream reporting.
+    public int computeMetric156(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 156;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #157 used by downstream reporting.
+    public int computeMetric157(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 157;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #158 used by downstream reporting.
+    public int computeMetric158(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 158;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #159 used by downstream reporting.
+    public int computeMetric159(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 159;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #160 used by downstream reporting.
+    public int computeMetric160(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 160;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #161 used by downstream reporting.
+    public int computeMetric161(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 161;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #162 used by downstream reporting.
+    public int computeMetric162(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 162;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #163 used by downstream reporting.
+    public int computeMetric163(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 163;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #164 used by downstream reporting.
+    public int computeMetric164(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 164;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #165 used by downstream reporting.
+    public int computeMetric165(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 165;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #166 used by downstream reporting.
+    public int computeMetric166(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 166;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #167 used by downstream reporting.
+    public int computeMetric167(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 167;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #168 used by downstream reporting.
+    public int computeMetric168(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 168;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #169 used by downstream reporting.
+    public int computeMetric169(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 169;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #170 used by downstream reporting.
+    public int computeMetric170(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 170;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #171 used by downstream reporting.
+    public int computeMetric171(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 171;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #172 used by downstream reporting.
+    public int computeMetric172(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 172;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #173 used by downstream reporting.
+    public int computeMetric173(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 173;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #174 used by downstream reporting.
+    public int computeMetric174(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 174;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #175 used by downstream reporting.
+    public int computeMetric175(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 175;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #176 used by downstream reporting.
+    public int computeMetric176(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 176;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #177 used by downstream reporting.
+    public int computeMetric177(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 177;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #178 used by downstream reporting.
+    public int computeMetric178(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 178;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #179 used by downstream reporting.
+    public int computeMetric179(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 179;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #180 used by downstream reporting.
+    public int computeMetric180(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 180;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #181 used by downstream reporting.
+    public int computeMetric181(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 181;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #182 used by downstream reporting.
+    public int computeMetric182(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 182;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #183 used by downstream reporting.
+    public int computeMetric183(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 183;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #184 used by downstream reporting.
+    public int computeMetric184(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 184;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #185 used by downstream reporting.
+    public int computeMetric185(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 185;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #186 used by downstream reporting.
+    public int computeMetric186(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 186;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #187 used by downstream reporting.
+    public int computeMetric187(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 187;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #188 used by downstream reporting.
+    public int computeMetric188(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 188;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #189 used by downstream reporting.
+    public int computeMetric189(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 189;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #190 used by downstream reporting.
+    public int computeMetric190(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 190;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #191 used by downstream reporting.
+    public int computeMetric191(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 191;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #192 used by downstream reporting.
+    public int computeMetric192(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 192;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #193 used by downstream reporting.
+    public int computeMetric193(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 193;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #194 used by downstream reporting.
+    public int computeMetric194(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 194;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #195 used by downstream reporting.
+    public int computeMetric195(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 195;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #196 used by downstream reporting.
+    public int computeMetric196(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 196;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #197 used by downstream reporting.
+    public int computeMetric197(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 197;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #198 used by downstream reporting.
+    public int computeMetric198(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 198;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #199 used by downstream reporting.
+    public int computeMetric199(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 199;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #200 used by downstream reporting.
+    public int computeMetric200(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 200;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #201 used by downstream reporting.
+    public int computeMetric201(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 201;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #202 used by downstream reporting.
+    public int computeMetric202(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 202;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #203 used by downstream reporting.
+    public int computeMetric203(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 203;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #204 used by downstream reporting.
+    public int computeMetric204(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 204;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #205 used by downstream reporting.
+    public int computeMetric205(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 205;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #206 used by downstream reporting.
+    public int computeMetric206(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 206;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #207 used by downstream reporting.
+    public int computeMetric207(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 207;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #208 used by downstream reporting.
+    public int computeMetric208(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 208;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #209 used by downstream reporting.
+    public int computeMetric209(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 209;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #210 used by downstream reporting.
+    public int computeMetric210(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 210;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #211 used by downstream reporting.
+    public int computeMetric211(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 211;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #212 used by downstream reporting.
+    public int computeMetric212(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 212;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #213 used by downstream reporting.
+    public int computeMetric213(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 213;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #214 used by downstream reporting.
+    public int computeMetric214(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 214;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #215 used by downstream reporting.
+    public int computeMetric215(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 215;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #216 used by downstream reporting.
+    public int computeMetric216(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 216;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #217 used by downstream reporting.
+    public int computeMetric217(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 217;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #218 used by downstream reporting.
+    public int computeMetric218(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 218;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #219 used by downstream reporting.
+    public int computeMetric219(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 219;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #220 used by downstream reporting.
+    public int computeMetric220(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 220;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #221 used by downstream reporting.
+    public int computeMetric221(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 221;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #222 used by downstream reporting.
+    public int computeMetric222(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 222;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #223 used by downstream reporting.
+    public int computeMetric223(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 223;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #224 used by downstream reporting.
+    public int computeMetric224(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 224;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #225 used by downstream reporting.
+    public int computeMetric225(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 225;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #226 used by downstream reporting.
+    public int computeMetric226(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 226;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #227 used by downstream reporting.
+    public int computeMetric227(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 227;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #228 used by downstream reporting.
+    public int computeMetric228(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 228;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #229 used by downstream reporting.
+    public int computeMetric229(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 229;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #230 used by downstream reporting.
+    public int computeMetric230(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 230;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #231 used by downstream reporting.
+    public int computeMetric231(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 231;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #232 used by downstream reporting.
+    public int computeMetric232(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 232;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #233 used by downstream reporting.
+    public int computeMetric233(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 233;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #234 used by downstream reporting.
+    public int computeMetric234(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 234;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #235 used by downstream reporting.
+    public int computeMetric235(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 235;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #236 used by downstream reporting.
+    public int computeMetric236(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 236;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #237 used by downstream reporting.
+    public int computeMetric237(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 237;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #238 used by downstream reporting.
+    public int computeMetric238(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 238;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #239 used by downstream reporting.
+    public int computeMetric239(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 239;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #240 used by downstream reporting.
+    public int computeMetric240(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 240;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #241 used by downstream reporting.
+    public int computeMetric241(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 241;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #242 used by downstream reporting.
+    public int computeMetric242(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 242;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #243 used by downstream reporting.
+    public int computeMetric243(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 243;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #244 used by downstream reporting.
+    public int computeMetric244(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 244;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #245 used by downstream reporting.
+    public int computeMetric245(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 245;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #246 used by downstream reporting.
+    public int computeMetric246(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 246;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #247 used by downstream reporting.
+    public int computeMetric247(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 247;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #248 used by downstream reporting.
+    public int computeMetric248(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 248;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #249 used by downstream reporting.
+    public int computeMetric249(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 249;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #250 used by downstream reporting.
+    public int computeMetric250(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 250;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #251 used by downstream reporting.
+    public int computeMetric251(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 251;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #252 used by downstream reporting.
+    public int computeMetric252(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 252;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #253 used by downstream reporting.
+    public int computeMetric253(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 253;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #254 used by downstream reporting.
+    public int computeMetric254(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 254;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #255 used by downstream reporting.
+    public int computeMetric255(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 255;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #256 used by downstream reporting.
+    public int computeMetric256(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 256;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #257 used by downstream reporting.
+    public int computeMetric257(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 257;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #258 used by downstream reporting.
+    public int computeMetric258(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 258;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #259 used by downstream reporting.
+    public int computeMetric259(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 259;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #260 used by downstream reporting.
+    public int computeMetric260(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 260;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #261 used by downstream reporting.
+    public int computeMetric261(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 261;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #262 used by downstream reporting.
+    public int computeMetric262(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 262;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #263 used by downstream reporting.
+    public int computeMetric263(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 263;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #264 used by downstream reporting.
+    public int computeMetric264(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 264;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #265 used by downstream reporting.
+    public int computeMetric265(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 265;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #266 used by downstream reporting.
+    public int computeMetric266(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 266;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #267 used by downstream reporting.
+    public int computeMetric267(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 267;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #268 used by downstream reporting.
+    public int computeMetric268(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 268;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #269 used by downstream reporting.
+    public int computeMetric269(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 269;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #270 used by downstream reporting.
+    public int computeMetric270(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 270;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #271 used by downstream reporting.
+    public int computeMetric271(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 271;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #272 used by downstream reporting.
+    public int computeMetric272(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 272;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #273 used by downstream reporting.
+    public int computeMetric273(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 273;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #274 used by downstream reporting.
+    public int computeMetric274(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 274;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #275 used by downstream reporting.
+    public int computeMetric275(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 275;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #276 used by downstream reporting.
+    public int computeMetric276(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 276;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #277 used by downstream reporting.
+    public int computeMetric277(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 277;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #278 used by downstream reporting.
+    public int computeMetric278(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 278;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #279 used by downstream reporting.
+    public int computeMetric279(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 279;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #280 used by downstream reporting.
+    public int computeMetric280(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 280;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #281 used by downstream reporting.
+    public int computeMetric281(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 281;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #282 used by downstream reporting.
+    public int computeMetric282(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 282;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #283 used by downstream reporting.
+    public int computeMetric283(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 283;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #284 used by downstream reporting.
+    public int computeMetric284(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 284;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #285 used by downstream reporting.
+    public int computeMetric285(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 285;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #286 used by downstream reporting.
+    public int computeMetric286(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 286;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #287 used by downstream reporting.
+    public int computeMetric287(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 287;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #288 used by downstream reporting.
+    public int computeMetric288(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 288;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #289 used by downstream reporting.
+    public int computeMetric289(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 289;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #290 used by downstream reporting.
+    public int computeMetric290(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 290;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #291 used by downstream reporting.
+    public int computeMetric291(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 291;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #292 used by downstream reporting.
+    public int computeMetric292(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 292;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #293 used by downstream reporting.
+    public int computeMetric293(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 293;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #294 used by downstream reporting.
+    public int computeMetric294(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 294;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #295 used by downstream reporting.
+    public int computeMetric295(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 295;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #296 used by downstream reporting.
+    public int computeMetric296(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 296;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #297 used by downstream reporting.
+    public int computeMetric297(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 297;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #298 used by downstream reporting.
+    public int computeMetric298(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 298;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #299 used by downstream reporting.
+    public int computeMetric299(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 299;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #300 used by downstream reporting.
+    public int computeMetric300(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 300;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #301 used by downstream reporting.
+    public int computeMetric301(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 301;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #302 used by downstream reporting.
+    public int computeMetric302(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 302;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #303 used by downstream reporting.
+    public int computeMetric303(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 303;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #304 used by downstream reporting.
+    public int computeMetric304(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 304;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #305 used by downstream reporting.
+    public int computeMetric305(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 305;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #306 used by downstream reporting.
+    public int computeMetric306(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 306;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #307 used by downstream reporting.
+    public int computeMetric307(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 307;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #308 used by downstream reporting.
+    public int computeMetric308(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 308;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #309 used by downstream reporting.
+    public int computeMetric309(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 309;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #310 used by downstream reporting.
+    public int computeMetric310(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 310;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #311 used by downstream reporting.
+    public int computeMetric311(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 311;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #312 used by downstream reporting.
+    public int computeMetric312(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 312;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #313 used by downstream reporting.
+    public int computeMetric313(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 313;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #314 used by downstream reporting.
+    public int computeMetric314(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 314;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #315 used by downstream reporting.
+    public int computeMetric315(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 315;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #316 used by downstream reporting.
+    public int computeMetric316(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 316;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #317 used by downstream reporting.
+    public int computeMetric317(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 317;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #318 used by downstream reporting.
+    public int computeMetric318(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 318;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #319 used by downstream reporting.
+    public int computeMetric319(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 319;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #320 used by downstream reporting.
+    public int computeMetric320(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 320;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #321 used by downstream reporting.
+    public int computeMetric321(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 321;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #322 used by downstream reporting.
+    public int computeMetric322(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 322;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #323 used by downstream reporting.
+    public int computeMetric323(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 323;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #324 used by downstream reporting.
+    public int computeMetric324(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 324;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #325 used by downstream reporting.
+    public int computeMetric325(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 325;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #326 used by downstream reporting.
+    public int computeMetric326(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 326;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #327 used by downstream reporting.
+    public int computeMetric327(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 327;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #328 used by downstream reporting.
+    public int computeMetric328(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 328;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #329 used by downstream reporting.
+    public int computeMetric329(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 329;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #330 used by downstream reporting.
+    public int computeMetric330(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 330;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #331 used by downstream reporting.
+    public int computeMetric331(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 331;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #332 used by downstream reporting.
+    public int computeMetric332(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 332;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #333 used by downstream reporting.
+    public int computeMetric333(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 333;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #334 used by downstream reporting.
+    public int computeMetric334(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 334;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #335 used by downstream reporting.
+    public int computeMetric335(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 335;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #336 used by downstream reporting.
+    public int computeMetric336(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 336;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #337 used by downstream reporting.
+    public int computeMetric337(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 337;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #338 used by downstream reporting.
+    public int computeMetric338(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 338;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #339 used by downstream reporting.
+    public int computeMetric339(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 339;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #340 used by downstream reporting.
+    public int computeMetric340(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 340;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #341 used by downstream reporting.
+    public int computeMetric341(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 341;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #342 used by downstream reporting.
+    public int computeMetric342(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 342;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #343 used by downstream reporting.
+    public int computeMetric343(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 343;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #344 used by downstream reporting.
+    public int computeMetric344(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 344;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #345 used by downstream reporting.
+    public int computeMetric345(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 345;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #346 used by downstream reporting.
+    public int computeMetric346(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 346;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #347 used by downstream reporting.
+    public int computeMetric347(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 347;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #348 used by downstream reporting.
+    public int computeMetric348(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 348;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #349 used by downstream reporting.
+    public int computeMetric349(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 349;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #350 used by downstream reporting.
+    public int computeMetric350(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 350;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #351 used by downstream reporting.
+    public int computeMetric351(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 351;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #352 used by downstream reporting.
+    public int computeMetric352(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 352;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #353 used by downstream reporting.
+    public int computeMetric353(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 353;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #354 used by downstream reporting.
+    public int computeMetric354(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 354;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #355 used by downstream reporting.
+    public int computeMetric355(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 355;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #356 used by downstream reporting.
+    public int computeMetric356(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 356;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #357 used by downstream reporting.
+    public int computeMetric357(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 357;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #358 used by downstream reporting.
+    public int computeMetric358(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 358;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #359 used by downstream reporting.
+    public int computeMetric359(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 359;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #360 used by downstream reporting.
+    public int computeMetric360(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 360;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #361 used by downstream reporting.
+    public int computeMetric361(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 361;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #362 used by downstream reporting.
+    public int computeMetric362(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 362;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #363 used by downstream reporting.
+    public int computeMetric363(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 363;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #364 used by downstream reporting.
+    public int computeMetric364(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 364;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #365 used by downstream reporting.
+    public int computeMetric365(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 365;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #366 used by downstream reporting.
+    public int computeMetric366(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 366;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #367 used by downstream reporting.
+    public int computeMetric367(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 367;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #368 used by downstream reporting.
+    public int computeMetric368(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 368;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #369 used by downstream reporting.
+    public int computeMetric369(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 369;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #370 used by downstream reporting.
+    public int computeMetric370(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 370;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #371 used by downstream reporting.
+    public int computeMetric371(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 371;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #372 used by downstream reporting.
+    public int computeMetric372(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 372;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #373 used by downstream reporting.
+    public int computeMetric373(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 373;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #374 used by downstream reporting.
+    public int computeMetric374(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 374;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #375 used by downstream reporting.
+    public int computeMetric375(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 375;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #376 used by downstream reporting.
+    public int computeMetric376(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 376;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #377 used by downstream reporting.
+    public int computeMetric377(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 377;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #378 used by downstream reporting.
+    public int computeMetric378(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 378;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #379 used by downstream reporting.
+    public int computeMetric379(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 379;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #380 used by downstream reporting.
+    public int computeMetric380(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 380;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #381 used by downstream reporting.
+    public int computeMetric381(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 381;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #382 used by downstream reporting.
+    public int computeMetric382(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 382;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #383 used by downstream reporting.
+    public int computeMetric383(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 383;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #384 used by downstream reporting.
+    public int computeMetric384(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 384;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #385 used by downstream reporting.
+    public int computeMetric385(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 385;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #386 used by downstream reporting.
+    public int computeMetric386(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 386;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #387 used by downstream reporting.
+    public int computeMetric387(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 387;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #388 used by downstream reporting.
+    public int computeMetric388(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 388;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #389 used by downstream reporting.
+    public int computeMetric389(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 389;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #390 used by downstream reporting.
+    public int computeMetric390(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 390;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #391 used by downstream reporting.
+    public int computeMetric391(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 391;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #392 used by downstream reporting.
+    public int computeMetric392(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 392;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #393 used by downstream reporting.
+    public int computeMetric393(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 393;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #394 used by downstream reporting.
+    public int computeMetric394(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 394;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #395 used by downstream reporting.
+    public int computeMetric395(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 395;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #396 used by downstream reporting.
+    public int computeMetric396(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 396;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #397 used by downstream reporting.
+    public int computeMetric397(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 397;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #398 used by downstream reporting.
+    public int computeMetric398(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 398;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #399 used by downstream reporting.
+    public int computeMetric399(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 399;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #400 used by downstream reporting.
+    public int computeMetric400(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 400;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #401 used by downstream reporting.
+    public int computeMetric401(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 401;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #402 used by downstream reporting.
+    public int computeMetric402(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 402;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #403 used by downstream reporting.
+    public int computeMetric403(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 403;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #404 used by downstream reporting.
+    public int computeMetric404(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 404;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #405 used by downstream reporting.
+    public int computeMetric405(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 405;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #406 used by downstream reporting.
+    public int computeMetric406(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 406;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #407 used by downstream reporting.
+    public int computeMetric407(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 407;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #408 used by downstream reporting.
+    public int computeMetric408(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 408;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #409 used by downstream reporting.
+    public int computeMetric409(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 409;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #410 used by downstream reporting.
+    public int computeMetric410(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 410;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #411 used by downstream reporting.
+    public int computeMetric411(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 411;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #412 used by downstream reporting.
+    public int computeMetric412(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 412;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #413 used by downstream reporting.
+    public int computeMetric413(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 413;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #414 used by downstream reporting.
+    public int computeMetric414(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 414;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #415 used by downstream reporting.
+    public int computeMetric415(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 415;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #416 used by downstream reporting.
+    public int computeMetric416(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 416;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #417 used by downstream reporting.
+    public int computeMetric417(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 417;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #418 used by downstream reporting.
+    public int computeMetric418(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 418;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #419 used by downstream reporting.
+    public int computeMetric419(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 419;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #420 used by downstream reporting.
+    public int computeMetric420(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 420;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #421 used by downstream reporting.
+    public int computeMetric421(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 421;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #422 used by downstream reporting.
+    public int computeMetric422(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 422;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #423 used by downstream reporting.
+    public int computeMetric423(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 423;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #424 used by downstream reporting.
+    public int computeMetric424(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 424;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #425 used by downstream reporting.
+    public int computeMetric425(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 425;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #426 used by downstream reporting.
+    public int computeMetric426(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 426;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #427 used by downstream reporting.
+    public int computeMetric427(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 427;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #428 used by downstream reporting.
+    public int computeMetric428(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 428;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #429 used by downstream reporting.
+    public int computeMetric429(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 429;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #430 used by downstream reporting.
+    public int computeMetric430(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 430;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #431 used by downstream reporting.
+    public int computeMetric431(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 431;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #432 used by downstream reporting.
+    public int computeMetric432(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 432;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #433 used by downstream reporting.
+    public int computeMetric433(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 433;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #434 used by downstream reporting.
+    public int computeMetric434(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 434;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #435 used by downstream reporting.
+    public int computeMetric435(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 435;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #436 used by downstream reporting.
+    public int computeMetric436(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 436;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #437 used by downstream reporting.
+    public int computeMetric437(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 437;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #438 used by downstream reporting.
+    public int computeMetric438(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 438;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #439 used by downstream reporting.
+    public int computeMetric439(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 439;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #440 used by downstream reporting.
+    public int computeMetric440(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 440;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #441 used by downstream reporting.
+    public int computeMetric441(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 441;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #442 used by downstream reporting.
+    public int computeMetric442(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 442;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #443 used by downstream reporting.
+    public int computeMetric443(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 443;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #444 used by downstream reporting.
+    public int computeMetric444(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 444;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #445 used by downstream reporting.
+    public int computeMetric445(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 445;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #446 used by downstream reporting.
+    public int computeMetric446(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 446;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #447 used by downstream reporting.
+    public int computeMetric447(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 447;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #448 used by downstream reporting.
+    public int computeMetric448(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 448;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #449 used by downstream reporting.
+    public int computeMetric449(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 449;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #450 used by downstream reporting.
+    public int computeMetric450(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 450;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #451 used by downstream reporting.
+    public int computeMetric451(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 451;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #452 used by downstream reporting.
+    public int computeMetric452(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 452;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #453 used by downstream reporting.
+    public int computeMetric453(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 453;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #454 used by downstream reporting.
+    public int computeMetric454(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 454;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #455 used by downstream reporting.
+    public int computeMetric455(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 455;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #456 used by downstream reporting.
+    public int computeMetric456(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 456;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #457 used by downstream reporting.
+    public int computeMetric457(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 457;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #458 used by downstream reporting.
+    public int computeMetric458(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 458;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #459 used by downstream reporting.
+    public int computeMetric459(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 459;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #460 used by downstream reporting.
+    public int computeMetric460(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 460;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #461 used by downstream reporting.
+    public int computeMetric461(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 461;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #462 used by downstream reporting.
+    public int computeMetric462(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 462;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #463 used by downstream reporting.
+    public int computeMetric463(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 463;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #464 used by downstream reporting.
+    public int computeMetric464(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 464;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #465 used by downstream reporting.
+    public int computeMetric465(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 465;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #466 used by downstream reporting.
+    public int computeMetric466(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 466;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #467 used by downstream reporting.
+    public int computeMetric467(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 467;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #468 used by downstream reporting.
+    public int computeMetric468(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 468;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #469 used by downstream reporting.
+    public int computeMetric469(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 469;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #470 used by downstream reporting.
+    public int computeMetric470(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 470;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #471 used by downstream reporting.
+    public int computeMetric471(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 471;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #472 used by downstream reporting.
+    public int computeMetric472(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 472;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #473 used by downstream reporting.
+    public int computeMetric473(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 473;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #474 used by downstream reporting.
+    public int computeMetric474(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 474;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #475 used by downstream reporting.
+    public int computeMetric475(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 475;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #476 used by downstream reporting.
+    public int computeMetric476(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 476;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #477 used by downstream reporting.
+    public int computeMetric477(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 477;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #478 used by downstream reporting.
+    public int computeMetric478(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 478;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #479 used by downstream reporting.
+    public int computeMetric479(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 479;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #480 used by downstream reporting.
+    public int computeMetric480(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 480;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #481 used by downstream reporting.
+    public int computeMetric481(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 481;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #482 used by downstream reporting.
+    public int computeMetric482(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 482;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #483 used by downstream reporting.
+    public int computeMetric483(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 483;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #484 used by downstream reporting.
+    public int computeMetric484(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 484;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #485 used by downstream reporting.
+    public int computeMetric485(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 485;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #486 used by downstream reporting.
+    public int computeMetric486(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 486;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #487 used by downstream reporting.
+    public int computeMetric487(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 487;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #488 used by downstream reporting.
+    public int computeMetric488(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 488;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #489 used by downstream reporting.
+    public int computeMetric489(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 489;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #490 used by downstream reporting.
+    public int computeMetric490(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 490;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #491 used by downstream reporting.
+    public int computeMetric491(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 491;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #492 used by downstream reporting.
+    public int computeMetric492(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 492;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #493 used by downstream reporting.
+    public int computeMetric493(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 493;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #494 used by downstream reporting.
+    public int computeMetric494(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 494;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #495 used by downstream reporting.
+    public int computeMetric495(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 495;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #496 used by downstream reporting.
+    public int computeMetric496(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 496;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #497 used by downstream reporting.
+    public int computeMetric497(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 497;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #498 used by downstream reporting.
+    public int computeMetric498(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 498;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #499 used by downstream reporting.
+    public int computeMetric499(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 499;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #500 used by downstream reporting.
+    public int computeMetric500(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 500;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #501 used by downstream reporting.
+    public int computeMetric501(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 501;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #502 used by downstream reporting.
+    public int computeMetric502(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 502;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #503 used by downstream reporting.
+    public int computeMetric503(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 503;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #504 used by downstream reporting.
+    public int computeMetric504(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 504;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #505 used by downstream reporting.
+    public int computeMetric505(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 505;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #506 used by downstream reporting.
+    public int computeMetric506(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 506;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #507 used by downstream reporting.
+    public int computeMetric507(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 507;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #508 used by downstream reporting.
+    public int computeMetric508(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 508;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #509 used by downstream reporting.
+    public int computeMetric509(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 509;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #510 used by downstream reporting.
+    public int computeMetric510(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 510;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #511 used by downstream reporting.
+    public int computeMetric511(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 511;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #512 used by downstream reporting.
+    public int computeMetric512(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 512;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #513 used by downstream reporting.
+    public int computeMetric513(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 513;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #514 used by downstream reporting.
+    public int computeMetric514(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 514;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #515 used by downstream reporting.
+    public int computeMetric515(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 515;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #516 used by downstream reporting.
+    public int computeMetric516(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 516;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #517 used by downstream reporting.
+    public int computeMetric517(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 517;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #518 used by downstream reporting.
+    public int computeMetric518(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 518;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #519 used by downstream reporting.
+    public int computeMetric519(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 519;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #520 used by downstream reporting.
+    public int computeMetric520(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 520;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #521 used by downstream reporting.
+    public int computeMetric521(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 521;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #522 used by downstream reporting.
+    public int computeMetric522(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 522;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #523 used by downstream reporting.
+    public int computeMetric523(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 523;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #524 used by downstream reporting.
+    public int computeMetric524(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 524;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #525 used by downstream reporting.
+    public int computeMetric525(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 525;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #526 used by downstream reporting.
+    public int computeMetric526(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 526;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #527 used by downstream reporting.
+    public int computeMetric527(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 527;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #528 used by downstream reporting.
+    public int computeMetric528(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 528;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #529 used by downstream reporting.
+    public int computeMetric529(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 529;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #530 used by downstream reporting.
+    public int computeMetric530(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 530;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #531 used by downstream reporting.
+    public int computeMetric531(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 531;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #532 used by downstream reporting.
+    public int computeMetric532(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 532;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #533 used by downstream reporting.
+    public int computeMetric533(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 533;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #534 used by downstream reporting.
+    public int computeMetric534(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 534;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #535 used by downstream reporting.
+    public int computeMetric535(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 535;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #536 used by downstream reporting.
+    public int computeMetric536(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 536;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #537 used by downstream reporting.
+    public int computeMetric537(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 537;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #538 used by downstream reporting.
+    public int computeMetric538(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 538;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #539 used by downstream reporting.
+    public int computeMetric539(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 539;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #540 used by downstream reporting.
+    public int computeMetric540(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 540;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #541 used by downstream reporting.
+    public int computeMetric541(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 541;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #542 used by downstream reporting.
+    public int computeMetric542(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 542;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #543 used by downstream reporting.
+    public int computeMetric543(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 543;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #544 used by downstream reporting.
+    public int computeMetric544(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 544;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #545 used by downstream reporting.
+    public int computeMetric545(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 545;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #546 used by downstream reporting.
+    public int computeMetric546(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 546;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #547 used by downstream reporting.
+    public int computeMetric547(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 547;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #548 used by downstream reporting.
+    public int computeMetric548(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 548;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #549 used by downstream reporting.
+    public int computeMetric549(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 549;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #550 used by downstream reporting.
+    public int computeMetric550(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 550;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #551 used by downstream reporting.
+    public int computeMetric551(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 551;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #552 used by downstream reporting.
+    public int computeMetric552(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 552;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #553 used by downstream reporting.
+    public int computeMetric553(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 553;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #554 used by downstream reporting.
+    public int computeMetric554(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 554;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #555 used by downstream reporting.
+    public int computeMetric555(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 555;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #556 used by downstream reporting.
+    public int computeMetric556(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 556;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #557 used by downstream reporting.
+    public int computeMetric557(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 557;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #558 used by downstream reporting.
+    public int computeMetric558(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 558;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #559 used by downstream reporting.
+    public int computeMetric559(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 559;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #560 used by downstream reporting.
+    public int computeMetric560(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 560;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #561 used by downstream reporting.
+    public int computeMetric561(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 561;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #562 used by downstream reporting.
+    public int computeMetric562(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 562;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #563 used by downstream reporting.
+    public int computeMetric563(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 563;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #564 used by downstream reporting.
+    public int computeMetric564(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 564;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #565 used by downstream reporting.
+    public int computeMetric565(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 565;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #566 used by downstream reporting.
+    public int computeMetric566(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 566;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #567 used by downstream reporting.
+    public int computeMetric567(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 567;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #568 used by downstream reporting.
+    public int computeMetric568(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 568;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #569 used by downstream reporting.
+    public int computeMetric569(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 569;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #570 used by downstream reporting.
+    public int computeMetric570(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 570;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #571 used by downstream reporting.
+    public int computeMetric571(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 571;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #572 used by downstream reporting.
+    public int computeMetric572(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 572;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #573 used by downstream reporting.
+    public int computeMetric573(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 573;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #574 used by downstream reporting.
+    public int computeMetric574(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 574;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #575 used by downstream reporting.
+    public int computeMetric575(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 575;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #576 used by downstream reporting.
+    public int computeMetric576(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 576;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #577 used by downstream reporting.
+    public int computeMetric577(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 577;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #578 used by downstream reporting.
+    public int computeMetric578(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 578;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #579 used by downstream reporting.
+    public int computeMetric579(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 579;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #580 used by downstream reporting.
+    public int computeMetric580(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 580;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #581 used by downstream reporting.
+    public int computeMetric581(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 581;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #582 used by downstream reporting.
+    public int computeMetric582(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 582;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #583 used by downstream reporting.
+    public int computeMetric583(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 583;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #584 used by downstream reporting.
+    public int computeMetric584(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 584;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #585 used by downstream reporting.
+    public int computeMetric585(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 585;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #586 used by downstream reporting.
+    public int computeMetric586(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 586;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #587 used by downstream reporting.
+    public int computeMetric587(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 587;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #588 used by downstream reporting.
+    public int computeMetric588(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 588;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #589 used by downstream reporting.
+    public int computeMetric589(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 589;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #590 used by downstream reporting.
+    public int computeMetric590(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 590;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #591 used by downstream reporting.
+    public int computeMetric591(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 591;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #592 used by downstream reporting.
+    public int computeMetric592(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 592;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #593 used by downstream reporting.
+    public int computeMetric593(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 593;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #594 used by downstream reporting.
+    public int computeMetric594(int base, int factor) {
+        int scaled = base * 7 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 594;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #595 used by downstream reporting.
+    public int computeMetric595(int base, int factor) {
+        int scaled = base * 1 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 595;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #596 used by downstream reporting.
+    public int computeMetric596(int base, int factor) {
+        int scaled = base * 2 + factor;
+        int adjusted = scaled - (base % 3);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 596;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #597 used by downstream reporting.
+    public int computeMetric597(int base, int factor) {
+        int scaled = base * 3 + factor;
+        int adjusted = scaled - (base % 4);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 597;
+        return normalized * (1);
+    }
+
+    // Computes a derived value #598 used by downstream reporting.
+    public int computeMetric598(int base, int factor) {
+        int scaled = base * 4 + factor;
+        int adjusted = scaled - (base % 5);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 598;
+        return normalized * (2);
+    }
+
+    // Computes a derived value #599 used by downstream reporting.
+    public int computeMetric599(int base, int factor) {
+        int scaled = base * 5 + factor;
+        int adjusted = scaled - (base % 6);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 599;
+        return normalized * (3);
+    }
+
+    // Computes a derived value #600 used by downstream reporting.
+    public int computeMetric600(int base, int factor) {
+        int scaled = base * 6 + factor;
+        int adjusted = scaled - (base % 2);
+        if (adjusted < 0) {
+            adjusted = 0;
+        }
+        int normalized = adjusted + 600;
+        return normalized * (1);
+    }
+
     // ---- refactoring target (BOTTOM of file, below the fold) ----------------
     public String buildMonthlyStatement(String customerName, int[] amounts, int discount) {
         int subtotal = 0;
@@ -1670,6 +6620,13 @@ public class LongAccountService {
         int taxed = (int) (subtotal * TAX_RATE);
         int total = subtotal - discount + taxed;
 
+        String section = formatSummarySection(customerName, subtotal, discount, taxed, total);
+
+        return "=== MONTHLY STATEMENT ===\n" + section + "=== END ===";
+    }
+
+    // Extracted from buildMonthlyStatement().
+    private String formatSummarySection(String customerName, int subtotal, int discount, int taxed, int total) {
         StringBuilder summary = new StringBuilder();
         summary.append("Region: ").append(region).append("\n");
         summary.append("Customer: ").append(customerName.trim().toUpperCase()).append("\n");
@@ -1677,8 +6634,6 @@ public class LongAccountService {
         summary.append("Discount: ").append(discount).append("\n");
         summary.append("Tax: ").append(taxed).append("\n");
         summary.append("Total: ").append(total).append("\n");
-        String section = summary.toString();
-
-        return "=== MONTHLY STATEMENT ===\n" + section + "=== END ===";
+        return summary.toString();
     }
 }
