@@ -12,7 +12,7 @@ public class LongAccountService {
     }
 
     // Computes a derived value #1 used by downstream reporting.
-    public int computeMetric001(int base, int factor) {
+    public int computePrimaryMetric(int base, int factor) {
         int scaled = base * 2 + factor;
         int adjusted = scaled - (base % 3);
         if (adjusted < 0) {
