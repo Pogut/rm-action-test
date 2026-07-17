@@ -1670,6 +1670,13 @@ public class LongAccountService {
         int taxed = (int) (subtotal * TAX_RATE);
         int total = subtotal - discount + taxed;
 
+        String section = formatSummarySection(customerName, subtotal, discount, taxed, total);
+
+        return "=== MONTHLY STATEMENT ===\n" + section + "=== END ===";
+    }
+
+    // Extracted from buildMonthlyStatement().
+    private String formatSummarySection(String customerName, int subtotal, int discount, int taxed, int total) {
         StringBuilder summary = new StringBuilder();
         summary.append("Region: ").append(region).append("\n");
         summary.append("Customer: ").append(customerName.trim().toUpperCase()).append("\n");
@@ -1677,8 +1684,6 @@ public class LongAccountService {
         summary.append("Discount: ").append(discount).append("\n");
         summary.append("Tax: ").append(taxed).append("\n");
         summary.append("Total: ").append(total).append("\n");
-        String section = summary.toString();
-
-        return "=== MONTHLY STATEMENT ===\n" + section + "=== END ===";
+        return summary.toString();
     }
 }
