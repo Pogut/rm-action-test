@@ -1,9 +1,7 @@
-class GuestAccount(private val username: String) {
-    fun displayName(): String {
-        return username.trim().uppercase()
-    }
-
+class GuestAccount(username: String) : Account(username) {
     fun canBrowseCatalog(): Boolean {
         return username.isNotEmpty()
     }
 }
+
+// testing
