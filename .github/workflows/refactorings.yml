@@ -18,7 +18,7 @@ jobs:
       - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: Pogut/refactoringminer-action@publishing-speed
+      - uses: Pogut/refactoringminer-action@fix/publishing-speed
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           image: tsantalis/refactoringminer:latest
