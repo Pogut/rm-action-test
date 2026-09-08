@@ -21,3 +21,6 @@ class CustomerProfile(
         loyaltyPoints += points
     }
 }
+
+
+// asgasg
