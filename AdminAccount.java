@@ -15,7 +15,4 @@ public class AdminAccount {
     }
 }
 
-// testing again! and again and again
-
-
-// and again and againn
+// testing highlights in kotlin
