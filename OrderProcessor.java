@@ -1,15 +1,15 @@
 public class OrderProcessor {
-    private final double taxRate = 0.08;
+    private final ReceiptFormatter formatter = new ReceiptFormatter();
 
-    public String buildReceipt(String customerName, int unitPrice, int quantity, int discount) {
+    public String buildReceipt(String buyerName, int unitPrice, int quantity, int discount) {
+        int total = calculateTotal(unitPrice, quantity, discount);
         int subtotal = unitPrice * quantity;
         int discountedSubtotal = subtotal - discount;
-        int tax = (int) (discountedSubtotal * taxRate);
-        int total = discountedSubtotal + tax;
+        int tax = (int) (discountedSubtotal * new PricingPolicy().taxRate);
 
-        String header = formatHeader(customerName);
-        double dollars = centsToDollars(total);
-        String status = formatPaymentStatus(total, discount);
+        String header = formatter.createReceiptHeader(buyerName);
+        double dollars = total / 100.0;
+        String status = describePaymentStatus(total, discount);
 
         return header + "\n"
                 + "Subtotal: " + subtotal + "\n"
@@ -19,15 +19,14 @@ public class OrderProcessor {
                 + status;
     }
 
-    private String formatHeader(String customerName) {
-        return "Receipt for " + customerName.trim().toUpperCase();
+    private int calculateTotal(int unitPrice, int quantity, int discount) {
+        int subtotal = unitPrice * quantity;
+        int discountedSubtotal = subtotal - discount;
+        int tax = (int) (discountedSubtotal * new PricingPolicy().taxRate);
+        return discountedSubtotal + tax;
     }
 
-    private double centsToDollars(int cents) {
-        return cents / 100.0;
-    }
-
-    private String formatPaymentStatus(int total, int discount) {
+    private String describePaymentStatus(int total, int discount) {
         if (total > 0 && discount > 0) {
             return "Discount applied";
         }
