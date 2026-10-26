@@ -1,0 +1,70 @@
+diff --git a/vscode-demo/src/shop/CustomerProfile.java b/vscode-demo/src/shop/CustomerProfile.java
+index df56903..a989a1e 100644
+--- a/vscode-demo/src/shop/CustomerProfile.java
++++ b/vscode-demo/src/shop/CustomerProfile.java
+@@ -25,7 +25,7 @@ public class CustomerProfile {
+         return address;
+     }
+ 
+-    public boolean canReceivePromotion() {
++    public boolean isEligibleForPromotion() {
+         return optedIn && email != null && email.contains("@");
+     }
+ }
+diff --git a/vscode-demo/src/shop/LoyaltyPolicy.java b/vscode-demo/src/shop/LoyaltyPolicy.java
+new file mode 100644
+index 0000000..f7705d2
+--- /dev/null
++++ b/vscode-demo/src/shop/LoyaltyPolicy.java
+@@ -0,0 +1,24 @@
++package shop;
++
++public final class LoyaltyPolicy {
++    private LoyaltyPolicy() {
++    }
++
++    public static int pointsFor(double orderTotal) {
++        int earned = (int) Math.floor(orderTotal / 10);
++        if (earned > 50) {
++            earned = 50;
++        }
++        return earned;
++    }
++
++    public static String tierFor(int points) {
++        if (points >= 1000) {
++            return "Gold";
++        }
++        if (points >= 300) {
++            return "Silver";
++        }
++        return "Bronze";
++    }
++}
+diff --git a/vscode-demo/src/shop/MemberAccount.java b/vscode-demo/src/shop/MemberAccount.java
+index 4a2ddc5..cf2804d 100644
+--- a/vscode-demo/src/shop/MemberAccount.java
++++ b/vscode-demo/src/shop/MemberAccount.java
+@@ -13,20 +13,10 @@ public class MemberAccount extends Account {
+     }
+ 
+     public void addPoints(double orderTotal) {
+-        int earned = (int) Math.floor(orderTotal / 10);
+-        if (earned > 50) {
+-            earned = 50;
+-        }
+-        points += earned;
++        points += LoyaltyPolicy.pointsFor(orderTotal);
+     }
+ 
+     public String tier() {
+-        if (points >= 1000) {
+-            return "Gold";
+-        }
+-        if (points >= 300) {
+-            return "Silver";
+-        }
+-        return "Bronze";
++        return LoyaltyPolicy.tierFor(points);
+     }
+ }
