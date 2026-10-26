@@ -11,7 +11,7 @@ public class InvoicePrinter {
                .append("\n");
         }
         out.append("Total: ").append(String.format("%.2f", order.total())).append("\n");
-        out.append(order.getCustomer().mailingLabel());
+        out.append(order.getCustomer().getAddress().mailingLabel());
         return out.toString();
     }
 }

@@ -47,7 +47,7 @@ public class Order {
 
     private double computeTax(double taxable) {
         double tax = taxable * 0.15;
-        if (customer.isLocal("Montreal")) {
+        if (customer.getAddress().isIn("Montreal")) {
             tax = taxable * 0.14975;
         }
         return tax;

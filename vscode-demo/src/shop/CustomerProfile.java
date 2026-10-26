@@ -3,17 +3,13 @@ package shop;
 public class CustomerProfile {
     private final Account account;
     private String email;
-    private String street;
-    private String city;
-    private String zip;
+    private Address address;
     private boolean optedIn;
 
-    public CustomerProfile(Account account, String email, String street, String city, String zip, boolean optedIn) {
+    public CustomerProfile(Account account, String email, Address address, boolean optedIn) {
         this.account = account;
         this.email = email;
-        this.street = street;
-        this.city = city;
-        this.zip = zip;
+        this.address = address;
         this.optedIn = optedIn;
     }
 
@@ -25,12 +21,8 @@ public class CustomerProfile {
         return email;
     }
 
-    public String mailingLabel() {
-        return street + "\n" + zip + " " + city;
-    }
-
-    public boolean isLocal(String storeCity) {
-        return city != null && city.equalsIgnoreCase(storeCity);
+    public Address getAddress() {
+        return address;
     }
 
     public boolean canReceivePromotion() {
