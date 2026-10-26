@@ -4,13 +4,13 @@ public class CustomerProfile {
     private final Account account;
     private String email;
     private Address address;
-    private boolean optedIn;
+    private boolean emailOptedIn;
 
-    public CustomerProfile(Account account, String email, Address address, boolean optedIn) {
+    public CustomerProfile(Account account, String email, Address address, boolean emailOptedIn) {
         this.account = account;
         this.email = email;
         this.address = address;
-        this.optedIn = optedIn;
+        this.emailOptedIn = emailOptedIn;
     }
 
     public Account getAccount() {
@@ -26,6 +26,6 @@ public class CustomerProfile {
     }
 
     public boolean canReceivePromotion() {
-        return optedIn && email != null && email.contains("@");
+        return emailOptedIn && email != null && email.contains("@");
     }
 }
