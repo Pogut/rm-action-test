@@ -13,5 +13,12 @@ public abstract class Account {
         return id;
     }
 
+    public String displayName() {
+        if (name == null || name.isBlank()) {
+            return "Customer " + id;
+        }
+        return name.trim();
+    }
+
     public abstract double discountRate();
 }

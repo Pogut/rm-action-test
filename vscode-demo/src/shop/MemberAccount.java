@@ -12,13 +12,6 @@ public class MemberAccount extends Account {
         return 0.10;
     }
 
-    public String displayName() {
-        if (name == null || name.isBlank()) {
-            return "Customer " + id;
-        }
-        return name.trim();
-    }
-
     public void addPoints(double orderTotal) {
         int earned = (int) Math.floor(orderTotal / 10);
         if (earned > 50) {

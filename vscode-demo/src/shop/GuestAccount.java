@@ -9,11 +9,4 @@ public class GuestAccount extends Account {
     public double discountRate() {
         return 0.0;
     }
-
-    public String displayName() {
-        if (name == null || name.isBlank()) {
-            return "Customer " + id;
-        }
-        return name.trim();
-    }
 }
