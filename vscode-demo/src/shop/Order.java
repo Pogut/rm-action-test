@@ -24,19 +24,32 @@ public class Order {
     }
 
     public double total() {
+        double subtotal = computeSubtotal();
+        double taxable = subtotal - computeDiscount(subtotal);
+        return taxable + computeTax(taxable);
+    }
+
+    private double computeSubtotal() {
         double subtotal = 0;
         for (OrderLine line : lines) {
             subtotal += line.getUnitPrice() * line.getQuantity();
         }
+        return subtotal;
+    }
+
+    private double computeDiscount(double subtotal) {
         double discount = subtotal * customer.getAccount().discountRate();
         if (subtotal > 500) {
             discount += 25;
         }
-        double taxable = subtotal - discount;
+        return discount;
+    }
+
+    private double computeTax(double taxable) {
         double tax = taxable * 0.15;
         if (customer.isLocal("Montreal")) {
             tax = taxable * 0.14975;
         }
-        return taxable + tax;
+        return tax;
     }
 }
